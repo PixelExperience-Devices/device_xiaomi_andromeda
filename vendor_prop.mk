@@ -136,6 +136,3 @@ PRODUCT_PROPERTY_OVERRIDES +=  \
     vendor.power.pasr.enabled=true \
     vendor.qcom.bluetooth.soc=cherokee \
     vendor.voice.path.for.pcm.voip=false \
-
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.build.version.security_patch=2020-01-01

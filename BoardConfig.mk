@@ -142,6 +142,10 @@ DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
 # Media
 TARGET_USES_ION := true
 
+# Vendor init
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_andromeda
+TARGET_RECOVERY_DEVICE_MODULES := libinit_andromeda
+
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 134217728
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
