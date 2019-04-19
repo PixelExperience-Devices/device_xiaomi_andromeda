@@ -1,3 +1,8 @@
 subdirs = [
     "light"
 ]
+
+hidl_package_root {
+    name: "vendor.xiaomi",
+    path: "device/xiaomi/andromeda/interfaces",
+}
