@@ -172,6 +172,9 @@ BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 # System properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
+# Power
+TARGET_USES_INTERACTION_BOOST := true
+
 # Verified Boot
 BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flag 2
