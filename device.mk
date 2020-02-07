@@ -4,6 +4,9 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# Inherit vendor
+$(call inherit-product, vendor/xiaomi/andromeda/andromeda-vendor.mk)
+
 # AID/fs configs
 PRODUCT_PACKAGES += \
     fs_config_files
@@ -371,6 +374,3 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/icm.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/icm.conf \
     $(LOCAL_PATH)/configs/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
     $(LOCAL_PATH)/configs/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
-
-# Inherit vendor
-$(call inherit-product, vendor/xiaomi/andromeda/andromeda-vendor.mk)
