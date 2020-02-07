@@ -280,7 +280,7 @@ vendor.perf.gestureflingboost.enable=true
 vendor.perf.workloadclassifier.enable=true
 
 #Expose aux camera for below packages
-vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.qualcomm.saltproject2,com.miui.cit,com.android.camera
+vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.lineageos.snap
 
 #enable IZat OptInApp overlay
 persist.vendor.overlay.izat.optin=rro
