@@ -245,6 +245,8 @@ PRODUCT_COPY_FILES += \
 
 # Ramdisk
 PRODUCT_PACKAGES += \
+    init.batteryd.rc \
+    init.mi_thermald.rc \
     capture.sh \
     capture_1adc.sh \
     init.class_late.sh \
