@@ -249,6 +249,13 @@ PRODUCT_PACKAGES += \
     fstab.qcom \
     ueventd.qcom.rc \
 
+# RCS
+PRODUCT_PACKAGES += \
+    rcs_service_aidl \
+    rcs_service_aidl.xml \
+    rcs_service_api \
+    rcs_service_api.xml
+
 # Recovery
 PRODUCT_PACKAGES += \
     librecovery_updater_xiaomi
