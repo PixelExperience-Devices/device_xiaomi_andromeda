@@ -289,6 +289,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     telephony-ext
 
+# Vulkan
+PRODUCT_PACKAGES += \
+    libvulkan
+
 # WiFi
 PRODUCT_PACKAGES += \
     wifi-mac-generator
