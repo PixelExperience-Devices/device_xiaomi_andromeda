@@ -124,7 +124,7 @@ public class KeyHandler extends CameraManager.AvailabilityCallback
         }
     }
 
-    private void openDefaultCameraApp(boolean frontCamera) {
+    private void openDefaultCameraApp() {
         KeyguardManager keyguardManager = mContext.getSystemService(KeyguardManager.class);
         if (keyguardManager == null) {
             return;
@@ -138,7 +138,7 @@ public class KeyHandler extends CameraManager.AvailabilityCallback
             intent = new Intent(MediaStore.INTENT_ACTION_STILL_IMAGE_CAMERA);
         }
 
-        intent.putExtra("android.intent.extra.USE_FRONT_CAMERA", frontCamera);
+        intent.putExtra("android.intent.extras.CAMERA_FACING", android.hardware.Camera.CameraInfo.CAMERA_FACING_FRONT);
 
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK
                 | Intent.FLAG_ACTIVITY_CLEAR_TASK);
@@ -157,11 +157,11 @@ public class KeyHandler extends CameraManager.AvailabilityCallback
     }
 
     private void handleSliderDown() {
-        if (mIsCameraAppOpen && !mIsDefaultCameraAppOpen) {
+        if (mIsCameraAppOpen && mIsDefaultCameraAppOpen) {
             return;
         }
 
-        openDefaultCameraApp(true /* frontCamera */);
+        openDefaultCameraApp();
     }
 
     private void handleSliderUp() {
@@ -169,6 +169,8 @@ public class KeyHandler extends CameraManager.AvailabilityCallback
             return;
         }
 
-        openDefaultCameraApp(false /* frontCamera */);
+        Intent intent2 = new Intent(Intent.ACTION_MAIN);
+        intent2.addCategory(Intent.CATEGORY_HOME);
+        startActivityAsUser(intent2, UserHandle.CURRENT_OR_SELF);
     }
 }
