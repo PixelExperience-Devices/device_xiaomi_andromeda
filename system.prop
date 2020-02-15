@@ -82,10 +82,15 @@ persist.vendor.ssr.restart_level=ALL_ENABLE
 persist.vendor.ssr.enable_ramdumps=1
 
 #set ims related prop
-# MIUI DEL: START
-#persist.dbg.volte_avail_ovr=1
-#persist.dbg.vt_avail_ovr=1
-# END
+persist.dbg.ims_volte_enable=1
+persist.dbg.volte_avail_ovr=1
+persist.dbg.vt_avail_ovr=1
+persist.dbg.wfc_avail_ovr=1
+persist.radio.data_ltd_sys_ind=1
+persist.radio.data_con_rprt=1
+persist.radio.calls.on.ims=1
+persist.radio.volte.dan_support=true
+persist.sys.cust.lte_config=true
 persist.radio.VT_HYBRID_ENABLE=1
 
 #iwaln vowifi corresponding
