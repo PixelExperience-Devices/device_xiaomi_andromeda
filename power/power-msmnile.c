@@ -37,6 +37,7 @@
 #include <unistd.h>
 #include <dlfcn.h>
 #include <string.h>
+#include <time.h>
 
 #define LOG_TAG "QTI PowerHAL"
 #include <utils/Log.h>
