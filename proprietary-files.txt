@@ -1626,7 +1626,6 @@ vendor/lib/sensors.ssc.so
 vendor/lib/sensors.touch.so
 vendor/lib64/libnotifyaudiohal.so
 vendor/lib64/libsensorcal.so
-vendor/lib64/libsensorndkbridge.so
 vendor/lib64/libsensorslog.so
 vendor/lib64/libssc.so
 vendor/lib64/libssccalapi.so
