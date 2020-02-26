@@ -89,7 +89,6 @@ vendor/lib64/libaudioparsers.so
 vendor/lib64/libaudioroute_ext.so
 -vendor/lib64/libaudio_log_utils.so
 vendor/lib64/libqtigef.so
-vendor/lib64/libtinycompress.so
 vendor/lib64/libtinycompress_vendor.so
 vendor/lib64/soundfx/libasphere.so
 vendor/lib64/soundfx/libqcbassboost.so
