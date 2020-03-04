@@ -166,7 +166,7 @@ VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
 
 # Sepolicy
 include device/qcom/sepolicy/sepolicy.mk
-
+BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/temp
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
 # System properties
