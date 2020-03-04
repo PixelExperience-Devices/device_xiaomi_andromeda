@@ -122,7 +122,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.2-service \
     android.hardware.memtrack@1.0-impl \
-    android.hardware.memtrack@1.0-service
+    android.hardware.memtrack@1.0-service \
+    libgui_vendor
 
 # IDC
 PRODUCT_COPY_FILES += \
