@@ -41,12 +41,20 @@ PRODUCT_PACKAGES += \
     audio.primary.msmnile
 
 PRODUCT_PACKAGES += \
-    libvolumelistener \
+    liba2dpoffload \
+    libbatterylistener \
+    libcomprcapture \
+    libexthwplugin \
+    libhdmiedid \
+    libhfp \
     libqcomvisualizer \
     libqcomvoiceprocessing \
     libqcomvoiceprocessingdescriptors \
     libqcompostprocbundle \
-    libtinycompress
+    libsndmonitor \
+    libspkrprot \
+    libtinycompress \
+    libvolumelistener
 
 PRODUCT_PACKAGES += \
     tinymix \
