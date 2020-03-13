@@ -359,7 +359,6 @@ PRODUCT_PACKAGES += \
     setup_mainmic2headphone.sh \
     setup_topmic2headphone.sh \
     teardown_loopback.sh \
-    init.msm.usb.configfs.rc \
     init.qcom.factory.rc \
     init.qcom.rc \
     init.qcom.usb.rc \
