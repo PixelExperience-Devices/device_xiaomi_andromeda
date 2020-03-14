@@ -40,6 +40,7 @@ persist.sys.offlinelog.logcat=false
 persist.sys.offlinelog.logcatkernel=false
 persist.sys.qseelogd=true
 persist.sys.sf.color_saturation=1.0
+persist.sys.sf.disable_blurs=1
 persist.vendor.audio.button_jack.profile=volume
 persist.vendor.audio.button_jack.switch=0
 persist.vendor.audio.fluence.speaker=true
