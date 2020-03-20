@@ -345,6 +345,10 @@ PRODUCT_PACKAGES += \
     init.target.rc \
     fstab.qcom \
     ueventd.qcom.rc \
+    hack_attest.sh
+
+PRODUCT_COPY_FILES += \
+	$(LOCAL_PATH)/rootdir/bin/hack_attest.sh:$(TARGET_COPY_OUT_SYSTEM)/bin/hack_attest.sh
 
 # RCS
 PRODUCT_PACKAGES += \
@@ -368,6 +372,10 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.deprecated@1.0 \
     android.hardware.secure_element@1.0 \
     librmnetctl
+
+# SQL
+PRODUCT_PACKAGES += \
+    sqlite3
 
 # Seccomp
 PRODUCT_COPY_FILES += \
