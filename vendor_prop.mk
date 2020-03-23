@@ -93,6 +93,7 @@ PRODUCT_PROPERTY_OVERRIDES +=  \
     ro.vendor.df.effect.conflict=1 \
     ro.vendor.display.cabl=0 \
     ro.vendor.extension_library=libqti-perfd-client.so \
+    ro.vendor.qti.va_odm.support=1 \
     sys.haptic.down.normal=1 \
     sys.haptic.down.strong=5 \
     sys.haptic.down.weak=0 \
