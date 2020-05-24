@@ -4,6 +4,7 @@
 # For special ro override property
 
 # LCD density
+ro.sf.lcd_density=440
 
 # System property for cabl
 ro.qualcomm.cabl=0
@@ -62,18 +63,6 @@ persist.rild.nitz_short_ons_0=
 persist.rild.nitz_short_ons_1=
 persist.rild.nitz_short_ons_2=
 persist.rild.nitz_short_ons_3=
-ril.subscription.types=NV,RUIM
-DEVICE_PROVISIONED=1
-persist.sys.fflag.override.settings_network_and_internet_v2=true
-
-#Set network mode to (T/L/G/W/1X/EVDO, T/G/W/L/1X/EVDO) for 7+7 mode device on DSDS mode
-ro.telephony.default_network=22,22
-ro.telephony.default_cdma_sub=0
-
-# set device to DSDS mode
-#persist.radio.multisim.config=dsds
-
-#set uim type
 ril.subscription.types=RUIM
 
 #set ramdump restart_level
@@ -81,6 +70,11 @@ persist.vendor.ssr.restart_level=ALL_ENABLE
 
 #enable ramdump
 persist.vendor.ssr.enable_ramdumps=1
+
+DEVICE_PROVISIONED=1
+# Set network mode to (T/L/G/W/1X/EVDO, T/L/G/W/1X/EVDO) for 7+7 mode device on DSDS mode
+ro.telephony.default_network=22,22
+ro.telephony.default_cdma_sub=0
 
 #set ims related prop
 persist.dbg.ims_volte_enable=1
@@ -94,7 +88,7 @@ persist.radio.volte.dan_support=true
 persist.sys.cust.lte_config=true
 persist.radio.VT_HYBRID_ENABLE=1
 
-#iwaln vowifi corresponding
+#iwlan vowifi corresponding
 persist.vendor.data.iwlan.enable=true
 
 #set dpm related prop
@@ -107,9 +101,6 @@ persist.radio.NO_STAPA=1
 # Report redirection call number
 persist.vendor.radio.redir_party_num=1
 
-#Enable manual network selection function and distinguish 2G/3G/4G
-persist.vendor.radio.rat_on=combine
-
 #for special cdma card sms issue
 persist.vendor.radio.force_on_dc=true
 
@@ -119,15 +110,11 @@ persist.sys.strictmode.disable=true
 #set SAR feature
 persist.radio.dynamic_sar=false
 
-# system property determining camera HAL to be used for a vedio call
-# 1 is camera1
-# 2 or anything else is camera2
+#Enable manual network selection function and distinguish 2G/3G/4G
+persist.vendor.radio.rat_on=combine
 
-persist.radio.VT_CAM_INTERFACE=1
-
-#disble rcs service
+#enable rcs service
 persist.rcs.supported=1
-# Set network mode to (T/L/G/W/1X/EVDO, T/L/G/W/1X/EVDO) for 7+7 mode device on DSDS mode
 
 dalvik.vm.heapsize=36m
 dev.pm.dyn_samplingrate=1
@@ -147,16 +134,15 @@ media.stagefright.enable-aac=true
 media.stagefright.enable-qcp=true
 media.stagefright.enable-fma2dp=true
 media.stagefright.enable-scan=true
+media.stagefright.thumbnail.prefer_hw_codecs=true
 mmp.enable.3g2=true
 media.aac_51_output_enabled=true
+#media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 mm.enable.smoothstreaming=true
 #13631487 is decimal sum of supported codecs in AAL
 #codecs:(PARSER_)AAC AC3 AMR_NB AMR_WB ASF AVI DTS FLV 3GP 3G2 MKV MP2PS MP2TS MP3 OGG QCP WAV FLAC AIFF APE DSD MOV XVID
 vendor.mm.enable.qcom_parser=63963135
 persist.mm.enable.prefetch=true
-
-#Netflix custom property
-ro.netflix.bsp_rev=Q855-16947-1
 
 #
 # system props for the data modules
@@ -167,8 +153,13 @@ persist.vendor.data.mode=concurrent
 #system props for time-services
 persist.timed.enable=true
 
-# system property for maximum number of HFP client connections
-bt.max.hfpclient.connections=1
+#
+# system prop for opengles version
+#
+# 196608 is decimal for 0x30000 to report version 3
+# 196609 is decimal for 0x30001 to report version 3.1
+# 196610 is decimal for 0x30002 to report version 3.2
+ro.opengles.version=196610
 
 #
 # System props for telephony
@@ -182,8 +173,11 @@ persist.fuse_sdcard=true
 #system prop for Bluetooth SOC type
 vendor.bluetooth.soc=cherokee
 persist.vendor.btstack.enable.splita2dp=true
+#ro.bluetooth.library_name=libbluetooth_qti.so
 persist.vendor.btstack.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aptxadaptive-aac-ldac
-persist.vendor.btstack.aac_frm_ctl.enabled=true
+persist.vendor.btstack.enable.twsplus=true
+persist.vendor.btstack.connect.peer_earbud=true
+persist.vendor.btstack.enable.twsplussho=true
 
 #system prop for wipower support
 ro.bluetooth.emb_wp_mode=false
@@ -269,49 +263,30 @@ persist.vendor.radio.atfwd.start=true
 ro.kernel.qemu.gles=0
 qemu.hw.mainkeys=0
 
-#Increase cached app limit
-#ro.vendor.qti.sys.fw.bg_apps_limit=60
-
-#Enable ZRAM
-ro.vendor.qti.config.zram=false
-
-#IOP properties
-vendor.iop.enable_uxe=0
-vendor.iop.enable_prefetch_ofr=0
-vendor.perf.iop_v3.enable=true
-#Property to enable perf boosts from System Server
-vendor.perf.gestureflingboost.enable=true
-#Property to enable WorkloadClassifier
-vendor.perf.workloadclassifier.enable=true
-
 #Expose aux camera for below packages
 vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.lineageos.snap
 
 #enable IZat OptInApp overlay
 persist.vendor.overlay.izat.optin=rro
 
-#logd buffer size
-ro.logd.size=2M
 #Property to enable Mag filter
 persist.vendor.sensors.enable.mag_filter=true
+
+#logd buffer size
+ro.logd.size=2M
+
+#Netflix custom property
+ro.netflix.bsp_rev=Q855-16947-1
+
+#disable dpm log
+persist.vendor.dpm.loglevel=0
 
 # enable b-services aging propagation
 ro.vendor.qti.sys.fw.bservice_enable=true
 
-# ro.location properties below are used in conjunction
-# with NLP_MODE setting in /vendor/etc/izat.conf
-# either as the main network provider or as a fallback
-# provider depending on NLP_MODE that is set
-# These properties are optional and will not cause
-# issues if not set to existing packages.
-# ro.location.osnlp.package sets the name of default
-# OS sepecific network location provider package to use
-# ro.location.osnlp.region.package is set to the name
-# of the alternative network location provider package
-# to be used for a particular region where the default
-# network location provider is not functional
-ro.location.osnlp.package=com.google.android.gms
-ro.location.osnlp.region.package=
+# enable temp dds
+persist.vendor.radio.enable_temp_dds=true
+# end of device/xiaomi/sm8150_common/system.prop
 #
 # from device/xiaomi/sm8150_common/common_rw.prop
 #
@@ -321,14 +296,10 @@ ro.location.osnlp.region.package=
 #
 # For special rw override property
 
-#system property for displayfeature hidl
-sys.displayfeature_hidl=true
-#system property for HBM mode
-sys.displayfeature.hbm.enable=true
-
 # set modem configuration
 persist.radio.multisim.config=ssss
 persist.vendor.radio.5g_mode_pref=1
+persist.vendor.radio.5g_mode_pref_0=1
 
 # modem for enable tunner usecase
 persist.bsquare.usecase.support=1
@@ -342,14 +313,18 @@ persist.radio.sar_sar_sensor=true
 #Property for modem dynamic sar state
 persist.radio.modem_dynamic_sar_state=close
 
+#system property for displayfeature hidl
+sys.displayfeature_hidl=true
+#system property for HBM mode
+sys.displayfeature.hbm.enable=true
+
 #dualcam sat fallback setting
 persist.camera.sat.fallback.dist=45
 persist.camera.sat.fallback.dist.d=5
 persist.camera.sat.fallback.luxindex=310
 persist.camera.sat.fallback.lux.d=50
 
-#system prop for Bluetooth TWS+ feature
-persist.vendor.btstack.enable.twsplus=true
-persist.vendor.btstack.connect.peer_earbud=true
+#quick charge type detect
+persist.quick.charge.detect=1
 
 #
