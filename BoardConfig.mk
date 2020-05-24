@@ -17,7 +17,7 @@ TARGET_CPU_VARIANT := generic
 TARGET_CPU_VARIANT_RUNTIME := cortex-a76
 
 TARGET_2ND_ARCH := arm
-TARGET_2ND_ARCH_VARIANT := armv8-a
+TARGET_2ND_ARCH_VARIANT := armv8-2a
 TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := generic
@@ -142,10 +142,6 @@ DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
 # Media
 TARGET_USES_ION := true
 
-# Vendor init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_andromeda
-TARGET_RECOVERY_DEVICE_MODULES := libinit_andromeda
-
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 134217728
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
@@ -172,6 +168,9 @@ TARGET_USERIMAGES_SPARSE_EXT_DISABLED := false
 TARGET_USES_MKE2FS := true
 
 TARGET_COPY_OUT_VENDOR := vendor
+
+# Power
+TARGET_USES_INTERACTION_BOOST := true
 
 # QCOM
 BOARD_USES_QCOM_HARDWARE := true
@@ -201,8 +200,9 @@ BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 # System properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
-# Power
-TARGET_USES_INTERACTION_BOOST := true
+# Vendor init
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_andromeda
+TARGET_RECOVERY_DEVICE_MODULES := libinit_andromeda
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
