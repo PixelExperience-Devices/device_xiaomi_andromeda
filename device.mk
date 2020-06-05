@@ -22,7 +22,8 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-pe
+    $(LOCAL_PATH)/overlay-pe \
+    $(LOCAL_PATH)/overlay-system
 
 # Properties
 include $(LOCAL_PATH)/vendor_prop.mk
@@ -91,9 +92,11 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
+    BluetoothQti \
     liba2dpoffload \
     libbthost_if \
-    libldacBT_dec
+    vendor.qti.hardware.bluetooth_audio@2.0.vendor \
+    vendor.qti.hardware.btconfigstore@1.0.vendor
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.bluetooth.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth.xml \
