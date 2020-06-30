@@ -2868,7 +2868,6 @@ vendor/lib/libvndfwk_detect_jni.qti.so
 vendor/lib/libvorbisidec.so
 vendor/lib/libvpx.so
 vendor/lib/libwapi_cert.so
-vendor/lib/libwifi-hal-ctrl.so
 vendor/lib/libwigig_flashaccess.so
 vendor/lib/libwigig_pciaccess.so
 vendor/lib/libwigig_utils.so
@@ -2957,7 +2956,6 @@ vendor/lib64/libteeclientjni.so
 vendor/lib64/libultrasound.so
 vendor/lib64/libvndfwk_detect_jni.qti.so
 vendor/lib64/libwapi_cert.so
-vendor/lib64/libwifi-hal-ctrl.so
 vendor/lib64/libwigig_flashaccess.so
 vendor/lib64/libwigig_pciaccess.so
 vendor/lib64/libwigig_utils.so
