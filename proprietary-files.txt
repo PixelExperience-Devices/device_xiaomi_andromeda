@@ -815,7 +815,6 @@ vendor/lib/libdrmutils.so
 vendor/lib/libgpu_tonemapper.so
 vendor/lib/libgralloccore.so
 vendor/lib/libgrallocutils.so
-vendor/lib/libqdMetaData.so
 vendor/lib/libqdutils.so
 vendor/lib/libqservice.so
 vendor/lib/libsdm-colormgr-algo.so
@@ -846,7 +845,6 @@ vendor/lib64/libdrmutils.so
 vendor/lib64/libgpu_tonemapper.so
 vendor/lib64/libgralloccore.so
 vendor/lib64/libgrallocutils.so
-vendor/lib64/libqdMetaData.so
 vendor/lib64/libqdutils.so
 vendor/lib64/libqservice.so
 vendor/lib64/libsdm-colormgr-algo.so
@@ -2809,7 +2807,6 @@ vendor/lib/libcomprcapture.so
 vendor/lib/libcryptfshwcommon.so
 vendor/lib/libcryptfshwhidl.so
 vendor/lib/libdiagjni.so
-vendor/lib/libdisplayconfig.so
 vendor/lib/libdng_sdk.so
 vendor/lib/libexthwplugin.so
 vendor/lib/libfastcrc.so
@@ -2922,7 +2919,6 @@ vendor/lib64/libcomprcapture.so
 vendor/lib64/libcryptfshwcommon.so
 vendor/lib64/libcryptfshwhidl.so
 vendor/lib64/libdiagjni.so
-vendor/lib64/libdisplayconfig.so
 vendor/lib64/libdng_sdk.so
 vendor/lib64/libexthwplugin.so
 vendor/lib64/libgameoptfeature.so
