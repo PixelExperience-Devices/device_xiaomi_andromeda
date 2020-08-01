@@ -21,9 +21,6 @@ ro.vendor.display.sensortype=2
 #Property for display default color mode
 vendor.display.enable_default_color_mode=1
 
-# Enable displayfeature poll to monitor backlight
-ro.xiaomi.bl.poll=true
-
 #support unlimited color temperature adjust
 ro.colorpick_adjust=true
 
@@ -31,16 +28,9 @@ ro.colorpick_adjust=true
 sdm.debug.disable_inline_rotator=1
 sdm.debug.disable_inline_rotator_secure=1
 
-#support night mode 2.0
-ro.eyecare.brightness.threshold=7
-ro.eyecare.brightness.level=5
-ro.hist.brightness.threshold=7
-
 # White Point Calibration
 ro.whitepoint_calibration_enable=false
 
-#Property for display feature histogram
-ro.displayfeature.histogram.enable=false
 #
 # from device/xiaomi/sm8150_common/common_ro.prop
 #
@@ -312,11 +302,6 @@ persist.radio.sar_sar_sensor=true
 
 #Property for modem dynamic sar state
 persist.radio.modem_dynamic_sar_state=close
-
-#system property for displayfeature hidl
-sys.displayfeature_hidl=true
-#system property for HBM mode
-sys.displayfeature.hbm.enable=true
 
 #dualcam sat fallback setting
 persist.camera.sat.fallback.dist=45
