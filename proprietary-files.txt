@@ -661,7 +661,6 @@ vendor/lib/libqisl.so
 vendor/lib/libQSEEComAPI.so
 vendor/lib/librmp.so
 vendor/lib/librpmb.so
-vendor/lib/libsdedrm.so
 vendor/lib/libsecureui.so
 vendor/lib/libSecureUILib.so
 vendor/lib/libsecureui_svcsock.so
@@ -684,7 +683,6 @@ vendor/lib64/libqisl.so
 vendor/lib64/libQSEEComAPI.so
 vendor/lib64/librmp.so
 vendor/lib64/librpmb.so
-vendor/lib64/libsdedrm.so
 vendor/lib64/libsecureui.so
 vendor/lib64/libSecureUILib.so
 vendor/lib64/libsecureui_svcsock.so
@@ -728,70 +726,20 @@ vendor/lib64/mediadrm/libwvdrmengine.so
 # Display
 vendor/etc/dsi_samsung_fhd_ea8076_cmd_display_mi.xml
 
-# Display-Hardware
-vendor/bin/hw/vendor.qti.hardware.display.allocator-service
-vendor/etc/init/vendor.qti.hardware.display.allocator-service.rc
-vendor/lib/hw/android.hardware.graphics.mapper@2.0-impl-qti-display.so
-vendor/lib/hw/gralloc.default.so
-vendor/lib/hw/gralloc.msmnile.so
-vendor/lib/hw/hwcomposer.msmnile.so
-vendor/lib/hw/memtrack.msmnile.so
-vendor/lib/libdisplaydebug.so
-vendor/lib/libdisplayqos.so
-vendor/lib/libdpps.so
-vendor/lib/libdrm.so
-vendor/lib/libdrmutils.so
-vendor/lib/libgpu_tonemapper.so
-vendor/lib/libgralloccore.so
-vendor/lib/libgrallocutils.so
-vendor/lib/libqdutils.so
-vendor/lib/libqservice.so
-vendor/lib/libsdm-colormgr-algo.so
-vendor/lib/libsdmcore.so
-vendor/lib/libsdmextension.so
-vendor/lib/libsdmutils.so
-vendor/lib/vendor.display.config@1.0.so
-vendor/lib/vendor.display.config@1.1.so
-vendor/lib/vendor.display.config@1.10.so
-vendor/lib/vendor.display.config@1.2.so
-vendor/lib/vendor.display.config@1.3.so
-vendor/lib/vendor.display.config@1.4.so
-vendor/lib/vendor.display.config@1.5.so
-vendor/lib/vendor.display.config@1.6.so
-vendor/lib/vendor.display.config@1.7.so
-vendor/lib/vendor.display.config@1.8.so
-vendor/lib/vendor.display.config@1.9.so
-vendor/lib64/hw/android.hardware.graphics.mapper@2.0-impl-qti-display.so
-vendor/lib64/hw/gralloc.default.so
-vendor/lib64/hw/gralloc.msmnile.so
-vendor/lib64/hw/hwcomposer.msmnile.so
-vendor/lib64/hw/memtrack.msmnile.so
-vendor/lib64/libdisplaydebug.so
-vendor/lib64/libdisplayqos.so
-vendor/lib64/libdpps.so
-vendor/lib64/libdrm.so
-vendor/lib64/libdrmutils.so
-vendor/lib64/libgpu_tonemapper.so
-vendor/lib64/libgralloccore.so
-vendor/lib64/libgrallocutils.so
-vendor/lib64/libqdutils.so
-vendor/lib64/libqservice.so
-vendor/lib64/libsdm-colormgr-algo.so
-vendor/lib64/libsdmcore.so
-vendor/lib64/libsdmextension.so
-vendor/lib64/libsdmutils.so
-vendor/lib64/vendor.display.config@1.0.so
-vendor/lib64/vendor.display.config@1.1.so
-vendor/lib64/vendor.display.config@1.10.so
-vendor/lib64/vendor.display.config@1.2.so
-vendor/lib64/vendor.display.config@1.3.so
-vendor/lib64/vendor.display.config@1.4.so
-vendor/lib64/vendor.display.config@1.5.so
-vendor/lib64/vendor.display.config@1.6.so
-vendor/lib64/vendor.display.config@1.7.so
-vendor/lib64/vendor.display.config@1.8.so
-vendor/lib64/vendor.display.config@1.9.so
-vendor/lib64/vendor.qti.hardware.display.allocator@1.0.so
+# Display-Hardware (from LA.UM.8.1.r1-13500-sm8150.0)
+vendor/lib64/libdisp-aba.so|a7f8975e5a323100bb9e5feb14085c0c4479ce96
+vendor/lib64/libdisplayqos.so|8e5f13a5b7ea0efa8db2902c8719380d710bc857
+vendor/lib64/libdpps.so|d4e1ae93184554bbbb2c896d8afd3ee5eef8ff5c
+vendor/lib64/libhdr_tm.so|4f08d65045893e0ec2b351581d6378f2e187ca82
+vendor/lib64/libqseed3.so|3fb480721b26a2df0a2a96359814ef37a5da9148
+vendor/lib64/libsdedrm.so|1a6d6ac050678dbc2b7d724ff7c642e4946b573b
+vendor/lib64/libsdm-color.so|76967da4af05736649eab5568f59861a16be33bd
+vendor/lib64/libsdm-colormgr-algo.so|5f497ba10168722455b0a3b80e7e3dca85e00c8f
+vendor/lib64/libsdm-diag.so|1044fd68ba610d08d7a02765a95563cc90dd5a54
+vendor/lib64/libsdm-disp-vndapis.so|6f4fd3a5a253ec4dff787de1ad6e67d07e921d94
+vendor/lib64/libsdmextension.so|fc9994028e62ed31223b9a494c4bf4a469b855a9
+vendor/lib64/libtinyxml.so|6b469580f781995a2e78fe1b5c19930040a8798e
+vendor/lib64/libtinyxml2_1.so|92adc9b612766cda6fa50f4c36d046b1a6da0816
 
 # Display-calibration
 vendor/etc/qdcm_calib_data_Dual_nt35597_cmd_mode_dsi_truly_panel_without_DSC.xml.xml
@@ -1057,21 +1005,9 @@ vendor/lib64/libllvm-qcom.so|f54a2045ba95de31623ffa52bc7916e2e60e5837
 vendor/lib64/libOpenCL.so|d6bb350254707592d6f6360c06d4c3336f8f1155
 
 # Graphics
-vendor/lib/libhdr_tm.so
 vendor/lib/libpvr.so
-vendor/lib/libqseed3.so
-vendor/lib/libsdm-color.so
-vendor/lib/libsdm-diag.so
--vendor/lib/libsdm-disp-vndapis.so
-vendor/lib/libtinyxml2_1.so
 vendor/lib64/libgsl.so
-vendor/lib64/libhdr_tm.so
 vendor/lib64/libpvr.so
-vendor/lib64/libqseed3.so
-vendor/lib64/libsdm-color.so
-vendor/lib64/libsdm-diag.so
--vendor/lib64/libsdm-disp-vndapis.so
-vendor/lib64/libtinyxml2_1.so
 
 # HotwordEnrollment
 -product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk
@@ -1402,32 +1338,6 @@ vendor/bin/pm-service
 vendor/lib/libperipheral_client.so
 vendor/lib64/libperipheral_client.so
 
-# Postprocessing
-product/lib/vendor.display.color@1.0.so
-product/lib/vendor.display.color@1.1.so
-product/lib/vendor.display.color@1.2.so
-product/lib/vendor.display.color@1.3.so
-product/lib/vendor.display.postproc@1.0.so
-product/lib64/vendor.display.color@1.0.so
-product/lib64/vendor.display.color@1.1.so
-product/lib64/vendor.display.color@1.2.so
-product/lib64/vendor.display.color@1.3.so
-product/lib64/vendor.display.postproc@1.0.so
-vendor/bin/hw/vendor.display.color@1.0-service
-vendor/etc/init/vendor.display.color@1.0-service.rc
-vendor/lib/libdisp-aba.so
-vendor/lib/vendor.display.color@1.0.so
-vendor/lib/vendor.display.color@1.1.so
-vendor/lib/vendor.display.color@1.2.so
-vendor/lib/vendor.display.color@1.3.so
-vendor/lib/vendor.display.postproc@1.0.so
-vendor/lib64/libdisp-aba.so
-vendor/lib64/vendor.display.color@1.0.so
-vendor/lib64/vendor.display.color@1.1.so
-vendor/lib64/vendor.display.color@1.2.so
-vendor/lib64/vendor.display.color@1.3.so
-vendor/lib64/vendor.display.postproc@1.0.so
-
 # Power-Hardware
 vendor/bin/hw/android.hardware.power@1.2-service
 vendor/etc/init/android.hardware.power@1.2-service.rc
@@ -1477,12 +1387,6 @@ vendor/lib64/libqmi_common_so.so
 vendor/lib64/libqmi_csi.so
 vendor/lib64/libqmi_csvt_srvc.so
 vendor/lib64/libqmi_encdec.so
-
-# Qdutils
-vendor/bin/hw/vendor.qti.hardware.qdutils_disp@1.0-service-qti
-vendor/etc/init/vendor.qti.hardware.qdutils_disp@1.0-service-qti.rc
-vendor/lib/vendor.qti.hardware.qdutils_disp@1.0.so
-vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
 
 # Radio
 etc/permissions/privapp-permissions-qti.xml
@@ -2027,7 +1931,6 @@ framework/vendor.xiaomi.hardware.mtdservice-V1.1-java.jar
 framework/vendor.xiaomi.hardware.vsimapp-V1.0-java.jar
 lib/vendor.xiaomi.hardware.citsensorservice@1.0.so
 lib/vendor.xiaomi.hardware.citsensorservice@1.1.so
-lib/vendor.xiaomi.hardware.displayfeature@1.0.so
 lib/vendor.xiaomi.hardware.fingerprintextension@1.0.so
 lib/vendor.xiaomi.hardware.misys@1.0.so
 lib/vendor.xiaomi.hardware.misys@2.0.so
@@ -2035,7 +1938,6 @@ lib/vendor.xiaomi.hardware.misys@3.0.so
 lib/vendor.xiaomi.hardware.vibratorfeature@1.0.so
 lib64/vendor.xiaomi.hardware.citsensorservice@1.0.so
 lib64/vendor.xiaomi.hardware.citsensorservice@1.1.so
-lib64/vendor.xiaomi.hardware.displayfeature@1.0.so
 lib64/vendor.xiaomi.hardware.fingerprintextension@1.0.so
 lib64/vendor.xiaomi.hardware.misys@1.0.so
 lib64/vendor.xiaomi.hardware.misys@2.0.so
@@ -2050,7 +1952,6 @@ system/etc/permissions/vendor.xiaomi.hardware.mtdservice-V1.1-java-permission.xm
 system/etc/permissions/vendor.xiaomi.hardware.vsimapp-V1.0-java-permission.xml
 vendor/bin/hw/android.hardware.dumpstate@1.0-service.xiaomi
 vendor/bin/hw/vendor.xiaomi.hardware.citsensorservice@1.1-service
-vendor/bin/hw/vendor.xiaomi.hardware.displayfeature@1.0-service
 vendor/bin/hw/vendor.xiaomi.hardware.misys@1.0-service
 vendor/bin/hw/vendor.xiaomi.hardware.misys@2.0-service
 vendor/bin/hw/vendor.xiaomi.hardware.misys@3.0-service
@@ -2060,7 +1961,6 @@ vendor/bin/tidad@1.2
 vendor/bin/xiaomi_extend_cmd
 vendor/etc/init/android.hardware.dumpstate@1.0-service.xiaomi.rc
 vendor/etc/init/vendor.xiaomi.hardware.citsensorservice@1.1-service.rc
-vendor/etc/init/vendor.xiaomi.hardware.displayfeature@1.0-service.rc
 vendor/etc/init/vendor.xiaomi.hardware.misys@1.0-service.rc
 vendor/etc/init/vendor.xiaomi.hardware.misys@2.0-service.rc
 vendor/etc/init/vendor.xiaomi.hardware.misys@3.0-service.rc
@@ -2069,7 +1969,6 @@ vendor/etc/init/vendor.xiaomi.hardware.mtdservice@1.2-service.rc
 vendor/etc/init/vendor.xiaomi.hardware.tidaservice@1.2-service.rc
 vendor/etc/init/vendor.xiaomi.hardware.vsimapp@1.0-service.rc
 vendor/lib/hw/vendor.xiaomi.hardware.citsensorservice@1.1-impl.so
-vendor/lib/hw/vendor.xiaomi.hardware.displayfeature@1.0-impl.so
 vendor/lib/hw/vendor.xiaomi.hardware.misys@1.0-impl.so
 vendor/lib/hw/vendor.xiaomi.hardware.misys@2.0-impl.so
 vendor/lib/hw/vendor.xiaomi.hardware.misys@3.0-impl.so
@@ -2080,7 +1979,6 @@ vendor/lib/vendor.xiaomi.hardware.citsensorservice@1.0.so
 vendor/lib/vendor.xiaomi.hardware.citsensorservice@1.0_vendor.so
 vendor/lib/vendor.xiaomi.hardware.citsensorservice@1.1.so
 vendor/lib/vendor.xiaomi.hardware.citsensorservice@1.1_vendor.so
-vendor/lib/vendor.xiaomi.hardware.displayfeature@1.0.so
 vendor/lib/vendor.xiaomi.hardware.misys@1.0.so
 vendor/lib/vendor.xiaomi.hardware.misys@2.0.so
 vendor/lib/vendor.xiaomi.hardware.misys@3.0.so
@@ -2092,7 +1990,6 @@ vendor/lib/vendor.xiaomi.hardware.tidaservice@1.1.so
 vendor/lib/vendor.xiaomi.hardware.tidaservice@1.2.so
 vendor/lib/vendor.xiaomi.hardware.vsimapp@1.0.so
 vendor/lib64/hw/vendor.xiaomi.hardware.citsensorservice@1.1-impl.so
-vendor/lib64/hw/vendor.xiaomi.hardware.displayfeature@1.0-impl.so
 vendor/lib64/hw/vendor.xiaomi.hardware.misys@1.0-impl.so
 vendor/lib64/hw/vendor.xiaomi.hardware.misys@2.0-impl.so
 vendor/lib64/hw/vendor.xiaomi.hardware.misys@3.0-impl.so
@@ -2103,7 +2000,6 @@ vendor/lib64/vendor.xiaomi.hardware.citsensorservice@1.0.so
 vendor/lib64/vendor.xiaomi.hardware.citsensorservice@1.0_vendor.so
 vendor/lib64/vendor.xiaomi.hardware.citsensorservice@1.1.so
 vendor/lib64/vendor.xiaomi.hardware.citsensorservice@1.1_vendor.so
-vendor/lib64/vendor.xiaomi.hardware.displayfeature@1.0.so
 vendor/lib64/vendor.xiaomi.hardware.misys@1.0.so
 vendor/lib64/vendor.xiaomi.hardware.misys@2.0.so
 vendor/lib64/vendor.xiaomi.hardware.misys@3.0.so
@@ -2310,7 +2206,6 @@ vendor/lib/libbatterylistener.so
 vendor/lib/libcacertclient.so
 vendor/lib/libcert_parse.wpa_s.so
 vendor/lib/libcheckpid.so
-vendor/lib/libclient2slpi.notifier.so
 vendor/lib/libcodec2_hidl@1.0.so
 vendor/lib/libcodec2_vndk.so
 vendor/lib/libcomprcapture.so
@@ -2421,7 +2316,6 @@ vendor/lib64/libcacertclient.so
 vendor/lib64/libcert_parse.wpa_s.so
 vendor/lib64/libcheckpid.so
 vendor/lib64/libchrome.so
-vendor/lib64/libclient2slpi.notifier.so
 vendor/lib64/libcodec2_hidl@1.0.so
 vendor/lib64/libcodec2_vndk.so
 vendor/lib64/libcomprcapture.so
