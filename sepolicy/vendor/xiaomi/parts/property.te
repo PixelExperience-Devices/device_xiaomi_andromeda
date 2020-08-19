@@ -1,1 +1,1 @@
-type persist_slider_prop, property_type;
+vendor_public_prop(persist_slider_prop);
