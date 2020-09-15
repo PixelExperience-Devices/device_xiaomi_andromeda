@@ -60,5 +60,5 @@ void vendor_load_properties()
     // fingerprint
     property_override("ro.build.description", "andromeda-user-10-QKQ1.190825.002-20.1.7-release-keys");
     property_override("ro.treble.enabled", "false");
-    property_override_triple("ro.build.fingerprint", "ro.system.build.fingerprint", "ro.vendor.build.fingerprint", "google/coral/coral:10/QQ3A.200805.001/6578210:user/release-keys");
+    property_override_triple("ro.build.fingerprint", "ro.system.build.fingerprint", "ro.vendor.build.fingerprint", "google/coral/coral:11/RP1A.200720.009/6720564:user/release-keys");
 }
