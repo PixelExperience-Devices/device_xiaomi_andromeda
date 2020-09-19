@@ -97,7 +97,6 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    BluetoothQti \
     liba2dpoffload \
     libbthost_if \
     vendor.qti.hardware.bluetooth_audio@2.0.vendor \
