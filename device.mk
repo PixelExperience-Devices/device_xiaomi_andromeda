@@ -488,8 +488,10 @@ PRODUCT_COPY_FILES += \
 # WiFi Display
 PRODUCT_PACKAGES += \
     libnl \
-    libdisplayconfig \
-    libdisplayconfig.vendor \
+    libavservices_minijail \
+    libavservices_minijail.vendor \
+    libdisplayconfig.qti \
+    libdisplayconfig.qti.vendor \
     libqdMetaData \
     libqdMetaData.system \
     libqdMetaData.vendor
