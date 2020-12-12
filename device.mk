@@ -336,6 +336,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     init.batteryd.rc \
     init.mi_thermald.rc \
+    init.mi.usb.sh \
     capture.sh \
     capture_1adc.sh \
     init.class_main.sh \
