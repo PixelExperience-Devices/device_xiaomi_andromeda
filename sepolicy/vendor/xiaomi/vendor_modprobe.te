@@ -1,0 +1,2 @@
+#============= vendor_modprobe ==============
+allow vendor_modprobe vendor_debugfs_ipc:dir search;

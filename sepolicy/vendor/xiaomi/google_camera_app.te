@@ -1,0 +1,57 @@
+allow google_camera_app app_data_file:file rx_file_perms;
+
+# Allow handling of less common filesystem objects
+allow google_camera_app app_data_file:{
+  lnk_file
+  sock_file
+  fifo_file
+} create_file_perms;
+
+# Read and write system app data files passed over Binder.
+# Motivating case was /data/data/com.android.settings/cache/*.jpg for
+# cropping or taking user photos.
+allow google_camera_app system_app_data_file:file rw_file_perms;
+
+# Allow GoogleCamera to find system services
+allow google_camera_app {
+  app_api_service
+  audioserver_service
+  cameraserver_service
+  drmserver_service
+  mediaextractor_service
+  mediametrics_service
+  mediaserver_service
+  nfc_service
+  surfaceflinger_service
+}:service_manager find;
+
+# Allow untrusted apps to interact with gpuservice
+binder_call(google_camera_app, gpuservice)
+
+# allow untrusted apps to use UDP sockets provided by the system server but not
+# modify them other than to connect
+allow google_camera_app system_server:udp_socket {
+  connect
+  getattr
+  read
+  recvfrom
+  sendto
+  write
+  getopt
+  setopt };
+
+## Access to Hexagon DSP kernel device
+allow google_camera_app {
+  vendor_qdsp_device
+  vendor_xdsp_device
+}:chr_file r_file_perms;
+
+# Read adsp files, for Hexagon access
+allow google_camera_app adsprpcd_file:lnk_file r_file_perms;
+allow google_camera_app public_adsprpcd_file:file r_file_perms;
+
+# Allow read camera prop
+get_prop(google_camera_app, vendor_camera_prop)
+
+# Allow read vendor display prop
+get_prop(google_camera_app, vendor_display_prop)

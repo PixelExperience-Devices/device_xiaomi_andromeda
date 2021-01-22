@@ -1,0 +1,2 @@
+#============= tee ==============
+allow tee mnt_vendor_file:lnk_file read;

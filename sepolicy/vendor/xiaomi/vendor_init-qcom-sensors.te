@@ -1,0 +1,5 @@
+#============= vendor_init-qcom-sensors-sh ==============
+allow vendor_init-qcom-sensors-sh self:capability chown;
+allow vendor_init-qcom-sensors-sh vendor_persist_sensors_file:dir setattr;
+allow vendor_init-qcom-sensors-sh vendor_persist_sensors_file:fifo_file { getattr setattr };
+allow vendor_init-qcom-sensors-sh vendor_persist_sensors_file:file setattr;

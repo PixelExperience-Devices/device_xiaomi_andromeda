@@ -36,7 +36,6 @@ BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200n8 earlycon=msm_geni_serial,0xa90000
 BOARD_KERNEL_CMDLINE += androidboot.hardware=qcom androidboot.console=ttyMSM0
 BOARD_KERNEL_CMDLINE += androidboot.usbcontroller=a600000.dwc3
-#BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_KERNEL_CMDLINE += service_locator.enable=1
 BOARD_KERNEL_CMDLINE += firmware_class.path=/vendor/firmware_mnt/image
 BOARD_KERNEL_CMDLINE += loop.max_part=7
@@ -188,10 +187,12 @@ VENDOR_SECURITY_PATCH := 2020-01-01
 SELINUX_IGNORE_NEVERALLOWS := true
 
 include device/qcom/sepolicy_vndr/SEPolicy.mk
-include device/xiaomi/andromeda-sepolicy/sepolicy.mk
 
-#BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/temp
-#BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+PRODUCT_PUBLIC_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/public
+PRODUCT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
+
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor/xiaomi
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor/qcom/sm8150
 
 # System properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop

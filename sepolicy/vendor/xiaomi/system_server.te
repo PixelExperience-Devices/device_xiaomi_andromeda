@@ -1,0 +1,12 @@
+get_prop(system_server, vendor_persist_camera_prop)
+get_prop(system_server, vendor_default_prop)
+get_prop(system_server, vendor_camera_prop)
+
+allow system_server vendor_proc_shs:dir search;
+allow system_server vendor_security_patch_level_prop:file { r_file_perms };
+
+# Allow system server to read last_kmsg file
+allow system_server proc_last_kmsg:file r_file_perms;
+
+#============= system_server ==============
+allow system_server app_zygote:process getpgid;
