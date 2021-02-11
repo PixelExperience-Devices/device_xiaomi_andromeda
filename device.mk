@@ -30,7 +30,8 @@ PRODUCT_PACKAGES += \
     FrameworksResAndromeda \
     SettingsProviderResAndromeda \
     SystemUIResAndromeda \
-    TelephonyResAndromeda
+    TelephonyResAndromeda \
+    WifiOverlay
 
 # AID/fs configs
 PRODUCT_PACKAGES += \
