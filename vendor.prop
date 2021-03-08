@@ -29,6 +29,7 @@ persist.bluetooth.a2dp_offload.disabled=false
 persist.demo.hdmirotationlock=false
 persist.radio.multisim.config=ssss
 persist.sys.fflag.override.settings_network_and_internet_v2=true
+persist.sys.fuse.passthrough.enable=true
 persist.sys.labtest_flag=false
 persist.sys.mcd_config_file=/system/etc/mcd_default.conf
 persist.sys.offlinelog.kernel=false
