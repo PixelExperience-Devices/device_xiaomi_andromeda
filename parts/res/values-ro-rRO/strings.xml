@@ -56,4 +56,9 @@
     <string name="dirac_preset_country">Country</string>
     <string name="dirac_preset_dance">Dance</string>
     <string name="dirac_preset_metal">Metal</string>
+    <!-- Slider settings -->
+    <string name="slider_settings_title">Setări slider</string>
+    <string name="slider_settings_summary">Ajustează setări în legătură cu sliderul</string>
+    <string name="slider_mode_title">Activare cameră la folosirea sliderului</string>
+    <string name="slider_mode_summary">Nu deschide camera la folosirea sliderului</string>
 </resources>

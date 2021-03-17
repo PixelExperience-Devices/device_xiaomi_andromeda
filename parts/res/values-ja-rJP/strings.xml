@@ -56,4 +56,9 @@
     <string name="dirac_preset_country">カントリー</string>
     <string name="dirac_preset_dance">ダンス</string>
     <string name="dirac_preset_metal">メタル</string>
+    <!-- Slider settings -->
+    <string name="slider_settings_title">スライダー設定</string>
+    <string name="slider_settings_summary">スライダー関連の設定を調整する</string>
+    <string name="slider_mode_title">カメラモード</string>
+    <string name="slider_mode_summary">スライダーを開くときにカメラを起動しないでください</string>
 </resources>
