@@ -56,4 +56,9 @@
     <string name="dirac_preset_country">Country</string>
     <string name="dirac_preset_dance">Dance</string>
     <string name="dirac_preset_metal">Metal</string>
+    <!-- Slider settings -->
+    <string name="slider_settings_title">Slider</string>
+    <string name="slider_settings_summary">Configura il comportamento dello slider</string>
+    <string name="slider_mode_title">Fotocamera</string>
+    <string name="slider_mode_summary"> Avvia la fotocamera quando viene aperto lo slider</string>
 </resources>

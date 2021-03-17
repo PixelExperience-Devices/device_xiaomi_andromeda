@@ -56,4 +56,9 @@
     <string name="dirac_preset_country">Country</string>
     <string name="dirac_preset_dance">Dance</string>
     <string name="dirac_preset_metal">Métal</string>
+    <!-- Slider settings -->
+    <string name="slider_settings_title">Réglage du slider</string>
+    <string name="slider_settings_summary">Réglage des paramètres du slider</string>
+    <string name="slider_mode_title">Mode appareil photo</string>
+    <string name="slider_mode_summary">Appareil photo désactivé lors de l\'utilisation du slider</string>
 </resources>

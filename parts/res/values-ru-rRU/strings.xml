@@ -58,4 +58,9 @@
     <string name="dirac_preset_metal">Металл</string>
      <!-- QS tile title -->
     <string name="dirac_qs_tile_title">Mi звук</string>
+    <!-- Slider settings -->
+    <string name="slider_settings_title">Настройки слайдера</string>
+    <string name="slider_settings_summary">Настройте параметры слайдера</string>
+    <string name="slider_mode_title">Режим камеры</string>
+    <string name="slider_mode_summary">Не включать камеру при открытии слайдера</string>
 </resources>

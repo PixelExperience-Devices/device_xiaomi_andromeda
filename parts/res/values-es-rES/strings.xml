@@ -56,4 +56,9 @@
     <string name="dirac_preset_country">Country</string>
     <string name="dirac_preset_dance">Dance</string>
     <string name="dirac_preset_metal">Metal</string>
+    <!-- Slider settings -->
+    <string name="slider_settings_title">Ajustes de la cámara deslizable</string>
+    <string name="slider_settings_summary">Ajusta la configuración relacionada con la cámara deslizable</string>
+    <string name="slider_mode_title">Modo cámara</string>
+    <string name="slider_mode_summary">Evita que se inicie la cámara cuando usas la cámara deslizable</string>
 </resources>
