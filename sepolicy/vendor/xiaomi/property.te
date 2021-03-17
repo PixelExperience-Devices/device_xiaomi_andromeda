@@ -1,6 +1,9 @@
 # Sensors
 vendor_internal_prop(persist_sensors_prop);
 
+# Slider
+type persist_slider_prop, property_type;
+
 # Fingerprint
 vendor_restricted_prop(vendor_fp_prop);
 

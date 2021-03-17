@@ -2,6 +2,9 @@ r_dir_file(system_app, sysfs_zram)
 
 allow system_app hal_dumpstate_impl:binder call;
 
+get_prop(system_app, persist_slider_prop)
+set_prop(system_app, persist_slider_prop)
+
 #============= system_app ==============
 allow system_app hal_power_default:binder call;
 allow system_app hal_vibrator_default:binder call;
