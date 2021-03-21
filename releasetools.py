@@ -51,7 +51,7 @@ def OTA_InstallEnd(info):
   return
 
 def AddModemAssertion(info, input_zip):
-  android_info = info.input_zip.read("OTA/android-info.txt")
+  android_info = info.input_zip.read("OTA/android-info.txt").decode('UTF-8')
   m = re.search(r'require\s+version-modem\s*=\s*(.+)', android_info)
   miui_version = re.search(r'require\s+version-miui\s*=\s*(.+)', android_info)
   if m and miui_version:
@@ -64,7 +64,7 @@ def AddModemAssertion(info, input_zip):
   return
 
 def AddVendorAssertion(info, input_zip):
-  android_info = info.input_zip.read("OTA/android-info.txt")
+  android_info = info.input_zip.read("OTA/android-info.txt").decode('UTF-8')
   v = re.search(r'require\s+version-vendor\s*=\s*(.+)', android_info)
   miui_version = re.search(r'require\s+version-miui\s*=\s*(.+)', android_info)
   if v and miui_version:
