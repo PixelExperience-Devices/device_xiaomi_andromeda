@@ -20,6 +20,7 @@ import android.content.Context;
 import android.os.Bundle;
 import android.os.SystemProperties;
 import android.view.MenuItem;
+import androidx.preference.ListPreference;
 import androidx.preference.Preference;
 import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.PreferenceFragment;
@@ -31,10 +32,13 @@ import org.lineageos.settings.utils.FileUtils;
 public class SliderSettingsFragment extends PreferenceFragment implements
         OnPreferenceChangeListener {
 
+    private ListPreference mSoundPreference;
     private SwitchPreference mSliderPreference;
 
     private static final String SLIDER_DISABLE_KEY = "slider_disable";
     private static final String SLIDER_DISABLE_PROPERTY = "persist.slider.disable";
+    private static final String SLIDER_SOUND_KEY = "slider_sound";
+    private static final String SLIDER_SOUND_PROPERTY = "persist.slider.sound";
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
@@ -43,6 +47,16 @@ public class SliderSettingsFragment extends PreferenceFragment implements
         mSliderPreference = (SwitchPreference) findPreference(SLIDER_DISABLE_KEY);
         mSliderPreference.setEnabled(true);
         mSliderPreference.setOnPreferenceChangeListener(this);
+
+        mSoundPreference = (ListPreference) findPreference(SLIDER_SOUND_KEY);
+        mSoundPreference.setOnPreferenceChangeListener(this);
+
+        int sliderDisabled = SystemProperties.getInt(SLIDER_DISABLE_PROPERTY, 0);
+        if (sliderDisabled == 1) {
+            mSoundPreference.setEnabled(false);
+        } else {
+            mSoundPreference.setEnabled(true);
+        }
     }
 
     @Override
@@ -52,9 +66,14 @@ public class SliderSettingsFragment extends PreferenceFragment implements
                 int slider = SystemProperties.getInt(SLIDER_DISABLE_PROPERTY, 0);
                 if (slider == 1) {
                     SystemProperties.set(SLIDER_DISABLE_PROPERTY, "0");
+                    mSoundPreference.setEnabled(true);
                 } else {
                     SystemProperties.set(SLIDER_DISABLE_PROPERTY, "1");
+                    mSoundPreference.setEnabled(false);
                 }
+                return true;
+            case SLIDER_SOUND_KEY:
+                SystemProperties.set(SLIDER_SOUND_PROPERTY, (String.valueOf(newValue)));
                 return true;
             default: return false;
         }
