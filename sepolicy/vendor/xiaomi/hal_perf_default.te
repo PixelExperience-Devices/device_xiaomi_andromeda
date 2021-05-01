@@ -1,2 +1,0 @@
-#============= vendor_hal_perf_default ==============
-allow vendor_hal_perf_default sysfs_msm_subsys:dir search;

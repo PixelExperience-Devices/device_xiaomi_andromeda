@@ -1,0 +1,2 @@
+persist.vendor.sys.pay.                u:object_r:vendor_payment_security_prop:s0
+persist.vendor.sys.provision.status    u:object_r:vendor_payment_security_prop:s0

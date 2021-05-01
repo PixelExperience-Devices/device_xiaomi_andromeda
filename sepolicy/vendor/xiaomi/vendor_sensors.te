@@ -1,3 +1,0 @@
-#============= vendor_sensors ==============
-allow vendor_sensors mnt_vendor_file:lnk_file read;
-allow vendor_sensors proc:file { getattr open read };

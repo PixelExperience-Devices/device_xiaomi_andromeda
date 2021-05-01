@@ -177,12 +177,7 @@ VENDOR_SECURITY_PATCH := 2020-01-01
 
 # Sepolicy
 include device/qcom/sepolicy_vndr/SEPolicy.mk
-
-PRODUCT_PUBLIC_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/public
-PRODUCT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
-
-BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor/xiaomi
-BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor/qcom/sm8150
+include device/xiaomi/andromeda/sepolicy/sepolicy.mk
 
 # System properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop

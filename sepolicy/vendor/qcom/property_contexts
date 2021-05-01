@@ -1,0 +1,13 @@
+# Sensors
+persist.sensor.sardisable  u:object_r:vendor_sensors_prop:s0
+
+# Graphics
+ro.gfx.driver.1            u:object_r:exported3_default_prop:s0
+
+#
+sys.panel.                 u:object_r:sys_panel_prop:s0
+
+#
+init.svc.ril-daemon        u:object_r:vendor_qti_init_shell_prop:s0
+persist.serial.enable      u:object_r:vendor_qti_init_shell_prop:s0
+persist.sys.ext4.dataesb   u:object_r:vendor_qti_init_shell_prop:s0

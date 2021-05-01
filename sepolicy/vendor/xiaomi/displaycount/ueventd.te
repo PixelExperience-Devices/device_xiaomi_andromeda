@@ -1,0 +1,2 @@
+#============= ueventd ==============
+allow ueventd vendor_sysfs_displaycount:file getattr;

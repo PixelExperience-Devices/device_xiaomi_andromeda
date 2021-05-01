@@ -1,2 +1,0 @@
-# Allow vendor_thermal-engine to read files in sysfs_msm_subsys
-r_dir_file(vendor_thermal-engine, sysfs_msm_subsys)

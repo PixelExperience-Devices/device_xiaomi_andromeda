@@ -1,0 +1,4 @@
+dontaudit vendor_mdm_helper vendor_tombstone_data_file:fifo_file *;
+
+#============= vendor_mdm_helper ==============
+allow vendor_mdm_helper vendor_ssr_prop:file { getattr map open read };

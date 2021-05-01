@@ -1,0 +1,15 @@
+type charge_logger, domain;
+type charge_logger_exec, exec_type, vendor_file_type, file_type;
+
+init_daemon_domain(charge_logger)
+
+#============= charge_logger ==============
+allow charge_logger kmsg_device:chr_file { getattr open write };
+allow charge_logger self:netlink_kobject_uevent_socket { bind create read };
+allow charge_logger sysfs_wake_lock:file { open write };
+allow charge_logger vendor_data_file:dir { add_name write };
+allow charge_logger vendor_data_file:file { append create getattr open read write };
+allow charge_logger vendor_sysfs_battery_supply:dir search;
+allow charge_logger vendor_sysfs_battery_supply:file { getattr open read };
+allow charge_logger vendor_sysfs_usb_supply:dir search;
+allow charge_logger vendor_sysfs_usb_supply:file { getattr open read };

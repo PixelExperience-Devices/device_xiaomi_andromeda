@@ -1,2 +1,0 @@
-# allow system server to read camera properties
-get_prop(system_server, persist_camera_prop)

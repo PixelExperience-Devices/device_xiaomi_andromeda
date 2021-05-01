@@ -1,0 +1,2 @@
+#============= vendor_wifidisplayhalservice_qti ==============
+allow vendor_wifidisplayhalservice_qti self:capability net_raw;

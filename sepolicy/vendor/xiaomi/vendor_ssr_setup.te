@@ -1,2 +1,0 @@
-#============= vendor_ssr_setup ==============
-allow vendor_ssr_setup sysfs:file { open write };
