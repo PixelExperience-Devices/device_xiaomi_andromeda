@@ -183,9 +183,6 @@ VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
 include device/qcom/sepolicy_vndr/SEPolicy.mk
 include device/xiaomi/andromeda-sepolicy/sepolicy.mk
 
-#BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/temp
-#BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
-
 # System properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
