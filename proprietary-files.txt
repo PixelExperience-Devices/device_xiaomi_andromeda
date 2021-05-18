@@ -837,26 +837,17 @@ system_ext/etc/permissions/privapp-permissions-com.qualcomm.location.xml
 system_ext/framework/com.qti.location.sdk.jar
 system_ext/framework/izat.xt.srv.jar
 vendor/bin/garden_app
-vendor/bin/hw/android.hardware.gnss@2.1-service-qti
-vendor/etc/init/android.hardware.gnss@2.1-service-qti.rc
-vendor/etc/vintf/manifest/android.hardware.gnss@2.1-service-qti.xml
 vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml
-vendor/lib64/hw/android.hardware.gnss@2.1-impl-qti.so
-vendor/lib64/libbatching.so
 vendor/lib64/libcdfw_remote_api.so
 vendor/lib64/libgarden_haltests_e2e.so
-vendor/lib64/libgeofencing.so
 vendor/lib64/liblocation_api.so
-vendor/lib64/libloc_core.so
 vendor/lib64/liblowi_client.so
 vendor/lib64/libqdma_file_agent.so
 vendor/lib64/libslimclient.so
 
 # GPS-Hardware - from qssi-user-11-RKQ1.200710.002-V12.1.2.0.RJBMIXM-release-keys
 vendor/lib64/libgarden.so
-vendor/lib64/libgnss.so
 vendor/lib64/libgnsspps.so
-vendor/lib64/libgps.utils.so
 
 # Gatekeeper
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
