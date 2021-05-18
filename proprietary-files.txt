@@ -1148,9 +1148,6 @@ vendor/lib/libqti-utils.so|f0396512d699825cd405cd87f59b019ae05e3f81
 vendor/lib/libskewknob.so|af374b0f4df7429dc4d780d7c87dbf83a6464298
 vendor/lib/vendor.qti.hardware.iop@1.0.so|7244776c0f9ef0e01b267b7ef92e8db5912ad89a
 vendor/lib/vendor.qti.hardware.iop@2.0.so|ec767e11249f7f86d66f232676e6b2d5382979e4
-vendor/lib/vendor.qti.hardware.perf@2.0.so|09d2c1174a7ea62bedb1d3a1fc62c486997d9369
-vendor/lib/vendor.qti.hardware.perf@2.1.so|1161aa84929bdbd00f4e2c5789ed4699c25db326
-vendor/lib/vendor.qti.hardware.perf@2.2.so|e5997926aa323141885e330a564e816a7d66ef17
 vendor/lib64/libadaptlaunch.so|23abb42bc88b552f8bc70dcd1832fab39ec79f47
 vendor/lib64/libappclassifier.so|b18ba33ff968c2e13d95558e12e0c130a4611945
 vendor/lib64/libgameoptfeature.so|288259c3cafcec75a8789864a58f5a3028c4e3cc
@@ -1170,9 +1167,6 @@ vendor/lib64/libreffeature.so|8a1244586b4eda3fc72596d14a4e8b2a055e6d0c
 vendor/lib64/libskewknob.so|47cd8fdd2e162578328e6ad071045feeff4aa69c
 vendor/lib64/vendor.qti.hardware.iop@1.0.so|ab7e9d16481a52a919cd7484eed480913ce29e66
 vendor/lib64/vendor.qti.hardware.iop@2.0.so|a99da96aa7abf8b9a4cb950113d7fe4ccbe4ff6c
-vendor/lib64/vendor.qti.hardware.perf@2.0.so|60a1362c97f5f1fa54de8f7e59ab004c5b525f97
-vendor/lib64/vendor.qti.hardware.perf@2.1.so|af1764ad3d191dfe92348183b1be431d86b10e4e
-vendor/lib64/vendor.qti.hardware.perf@2.2.so|52c4c0cf35d3fa9e509e26252a6dc196c1e89282
 
 # Perf
 etc/perf/wlc_model.tflite
