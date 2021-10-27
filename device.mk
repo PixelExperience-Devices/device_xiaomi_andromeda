@@ -290,6 +290,7 @@ PRODUCT_COPY_FILES += \
 
 # Net
 PRODUCT_PACKAGES += \
+    librmnetctl \
     netutils-wrapper-1.0
 
 # NFC
