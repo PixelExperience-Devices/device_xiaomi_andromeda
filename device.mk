@@ -53,16 +53,21 @@ PRODUCT_PACKAGES += \
     audio.primary.msmnile
 
 PRODUCT_PACKAGES += \
+    libaudio-resampler \
+    libbatterylistener \
+    libcomprcapture \
+    libexthwplugin \
+    libhdmiedid \
+    libhfp \
+    libsndmonitor \
+    libspkrprot \
     libqcomvisualizer \
     libqcomvoiceprocessing \
     libqcomvoiceprocessingdescriptors \
     libqcompostprocbundle \
     libtinycompress \
-    libvolumelistener
-
-PRODUCT_PACKAGES += \
-    tinymix \
-    libaudio-resampler
+    libvolumelistener \
+    tinymix
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_effects.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.conf \
