@@ -13,7 +13,6 @@ debug.gralloc.enable_fb_ubwc=1
 debug.mdpcomp.logs=0
 debug.renderengine.backend=skiaglthreaded
 debug.sf.hw=1
-debug.sf.latch_unsignaled=1
 debug.stagefright.ccodec=1
 debug.stagefright.omx_default_rank.sw-audio=1
 debug.stagefright.omx_default_rank=0
