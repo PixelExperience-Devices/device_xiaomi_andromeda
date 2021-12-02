@@ -1,7 +1,7 @@
-#BOARD_PLAT_PUBLIC_SEPOLICY_DIRS += \
+#SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += \
 #    device/xiaomi/andromeda/sepolicy/public
 
-BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
+SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
     device/xiaomi/andromeda/sepolicy/private
 
 # NXP Sepolicy
