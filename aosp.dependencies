@@ -2,12 +2,12 @@
   {
     "repository":  "kernel_xiaomi_andromeda",
     "target_path": "kernel/xiaomi/andromeda",
-    "branch":      "ten"
+    "branch":      "twelve"
   },
   {
     "remote": "pixel-devices-blobs",
     "repository":  "vendor_xiaomi_andromeda",
     "target_path": "vendor/xiaomi/andromeda",
-    "branch":      "eleven"
+    "branch":      "twelve"
   }
 ]
