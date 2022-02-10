@@ -9,5 +9,11 @@
     "repository":  "vendor_xiaomi_andromeda",
     "target_path": "vendor/xiaomi/andromeda",
     "branch":      "twelve"
+  },
+  {
+    "repository" : "vendor_xiaomi_sdm845-common-extra",
+    "target_path": "vendor/xiaomi/sdm845-common-extra",
+    "branch"     : "twelve",
+    "remote"     : "pixel-devices-blobs"
   }
 ]
