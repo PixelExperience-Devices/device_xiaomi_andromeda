@@ -15,6 +15,7 @@ TARGET_INCLUDE_WIFI_EXT := true
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_INCLUDE_STOCK_ARCORE := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_SUPPORTS_QUICK_TAP := true
 
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
