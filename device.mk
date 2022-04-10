@@ -237,7 +237,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-hotword.xml
 
 # IFAA manager
--include vendor/xiaomi/sdm845-common-extra/ifaa.mk
+#PRODUCT_PACKAGES += \
+    org.ifaa.android.manager
+
+#PRODUCT_BOOT_JARS += \
+    org.ifaa.android.manager
 
 # IPA
 PRODUCT_PACKAGES += \
@@ -538,4 +542,5 @@ PRODUCT_PACKAGES += \
     libqdMetaData.vendor \
     libwfdaac_vendor
 
--include vendor/xiaomi/sdm845-common-extra/wfd.mk
+#PRODUCT_BOOT_JARS += \
+    WfdCommon
