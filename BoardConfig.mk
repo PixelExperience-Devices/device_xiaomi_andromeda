@@ -53,6 +53,7 @@ TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CONFIG := andromeda_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/andromeda
+TARGET_KERNEL_LLVM_BINUTILS := false
 
 # Platform
 TARGET_BOARD_PLATFORM := msmnile
