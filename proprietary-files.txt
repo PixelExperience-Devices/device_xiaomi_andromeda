@@ -1996,7 +1996,6 @@ vendor/bin/getconf
 vendor/bin/hw/android.hardware.atrace@1.0-service
 vendor/bin/hw/capabilityconfigstoretest
 vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service
-vendor/bin/hw/vendor.qti.hardware.cryptfshw@1.0-service-qti
 vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service
 vendor/bin/hw/vendor.qti.sla.service@1.0-service
 vendor/bin/i2cdetect
@@ -2051,7 +2050,6 @@ vendor/etc/init/slad.rc
 vendor/etc/init/tloc_daemon.rc
 vendor/etc/init/vendor.qti.adsprpc-service.rc
 vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc
-vendor/etc/init/vendor.qti.hardware.cryptfshw@1.0-service-qti.rc
 vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc
 vendor/etc/init/vendor.qti.sla.service@1.0-service.rc
 vendor/etc/NOTICE_GPL.html.gz
@@ -2102,8 +2100,6 @@ vendor/lib/libcert_parse.wpa_s.so
 vendor/lib/libcheckpid.so
 vendor/lib/libcodec2_hidl@1.0.so
 vendor/lib/libcomprcapture.so
-vendor/lib/libcryptfshwcommon.so
-vendor/lib/libcryptfshwhidl.so
 vendor/lib/libdiagjni.so
 vendor/lib/libdng_sdk.so
 vendor/lib/libexthwplugin.so
@@ -2165,7 +2161,6 @@ vendor/lib/vendor.qti.hardware.audiohalext@1.0.so
 vendor/lib/vendor.qti.hardware.automotive.vehicle@1.0.so
 vendor/lib/vendor.qti.hardware.cacert@1.0.so
 vendor/lib/vendor.qti.hardware.capabilityconfigstore@1.0.so
-vendor/lib/vendor.qti.hardware.cryptfshw@1.0.so
 vendor/lib/vendor.qti.hardware.display.mapper@2.0.so
 vendor/lib/vendor.qti.hardware.display.mapperextensions@1.0.so
 vendor/lib/vendor.qti.hardware.display.mapperextensions@1.1.so
@@ -2194,8 +2189,6 @@ vendor/lib64/libchrome.so
 vendor/lib64/libcodec2_hidl@1.0.so
 vendor/lib64/libcodec2_vndk.so
 vendor/lib64/libcomprcapture.so
-vendor/lib64/libcryptfshwcommon.so
-vendor/lib64/libcryptfshwhidl.so
 vendor/lib64/libdiagjni.so
 vendor/lib64/libdng_sdk.so
 vendor/lib64/libexthwplugin.so
@@ -2230,7 +2223,6 @@ vendor/lib64/libwvkeybox.so
 vendor/lib64/vendor.qti.hardware.audiohalext@1.0.so
 vendor/lib64/vendor.qti.hardware.automotive.vehicle@1.0.so
 vendor/lib64/vendor.qti.hardware.capabilityconfigstore@1.0.so
-vendor/lib64/vendor.qti.hardware.cryptfshw@1.0.so
 vendor/lib64/vendor.qti.hardware.display.mapper@1.0.so
 vendor/lib64/vendor.qti.hardware.display.mapper@2.0.so
 vendor/lib64/vendor.qti.hardware.display.mapperextensions@1.0.so
