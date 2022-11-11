@@ -53,7 +53,8 @@ PRODUCT_PACKAGES += \
     audio.bluetooth.default \
     audio.usb.default \
     audio.r_submix.default \
-    audio.primary.msmnile
+    audio.primary.msmnile \
+    sound_trigger.primary.msmnile
 
 PRODUCT_PACKAGES += \
     libaudio-resampler \
