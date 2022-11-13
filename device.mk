@@ -58,7 +58,6 @@ PRODUCT_PACKAGES += \
     libspkrprot \
     libqcomvisualizer \
     libqcomvoiceprocessing \
-    libqcomvoiceprocessingdescriptors \
     libqcompostprocbundle \
     libtinycompress \
     libvolumelistener \
@@ -106,8 +105,7 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    libcameraservice \
-    Snap
+    libcameraservice
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.flash-autofocus.xml \
@@ -262,8 +260,6 @@ PRODUCT_PACKAGES += \
     libOmxEvrcEnc \
     libOmxG711Enc \
     libOmxQcelp13Enc \
-    libOmxSwVdec \
-    libOmxSwVencMpeg4 \
     libOmxVdec \
     libOmxVenc \
     libstagefrighthw
@@ -290,7 +286,6 @@ PRODUCT_PACKAGES += \
     android.hardware.nfc_snxxx@1.2-service \
     android.hardware.secure_element@1.2.vendor \
     com.android.nfc_extras \
-    com.gsma.services.nfc \
     libchrome.vendor \
     NfcNci \
     SecureElement \
@@ -350,7 +345,6 @@ PRODUCT_COPY_FILES += \
 # Ramdisk
 PRODUCT_PACKAGES += \
     init.batteryd.rc \
-    init.mi_thermald.rc \
     init.mi.usb.sh \
     capture.sh \
     capture_1adc.sh \
@@ -386,13 +380,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/rootdir/bin/hack_attest.sh:$(TARGET_COPY_OUT_SYSTEM)/bin/hack_attest.sh
-
-# RCS
-PRODUCT_PACKAGES += \
-    rcs_service_aidl \
-    rcs_service_aidl.xml \
-    rcs_service_api \
-    rcs_service_api.xml
 
 # Recovery
 PRODUCT_PACKAGES += \
@@ -451,10 +438,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.cdma.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.cdma.xml \
     frameworks/native/data/etc/android.hardware.telephony.gsm.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.gsm.xml \
     frameworks/native/data/etc/android.hardware.telephony.ims.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.ims.xml
-
-# TextClassifier
-PRODUCT_PACKAGES += \
-    textclassifier.bundle1
 
 # Thermal
 PRODUCT_PACKAGES += \
@@ -524,10 +507,8 @@ PRODUCT_PACKAGES += \
     libavservices_minijail \
     libavservices_minijail.vendor \
     libdisplayconfig.qti \
-    libdisplayconfig.qti.vendor \
     libqdMetaData \
     libqdMetaData.system \
-    libqdMetaData.vendor \
     libwfdaac_vendor
 
 PRODUCT_BOOT_JARS += \
