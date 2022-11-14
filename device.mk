@@ -504,8 +504,4 @@ PRODUCT_PACKAGES += \
     libavservices_minijail.vendor \
     libdisplayconfig.qti \
     libqdMetaData \
-    libqdMetaData.system \
-    libwfdaac_vendor
-
-#PRODUCT_BOOT_JARS += \
-    WfdCommon
+    libqdMetaData.system
