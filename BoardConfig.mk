@@ -188,7 +188,7 @@ TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 VENDOR_SECURITY_PATCH := 2020-01-01
 
 # Sepolicy
-include device/qcom/sepolicy_vndr/SEPolicy.mk
+include device/qcom/sepolicy_vndr-legacy-um/SEPolicy.mk
 include device/xiaomi/andromeda/sepolicy/sepolicy.mk
 
 # System properties
