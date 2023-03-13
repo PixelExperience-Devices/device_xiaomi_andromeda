@@ -361,6 +361,27 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/privapp-permissions-qti.xml \
     $(LOCAL_PATH)/configs/qti_whitelist.xml:system/etc/sysconfig/qti_whitelist.xml
 
+# QTI Framework boost
+ifeq ($(TARGET_SUPPORTS_FRAMEWORK_BOOST),true)
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/frameworkboost/proprietary/system/etc/permissions/com.qualcomm.qti.Performance.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.qualcomm.qti.Performance.xml \
+    $(LOCAL_PATH)/frameworkboost/proprietary/system/etc/permissions/com.qualcomm.qti.UxPerformance.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.qualcomm.qti.UxPerformance.xml
+
+PRODUCT_PACKAGES += \
+    libtflite \
+    FrameworkBoostOverlay \
+    PerformanceMode \
+    PowerSaveMode \
+    QPerformance \
+    QXPerformance \
+    UxPerformance \
+    workloadclassifier
+
+PRODUCT_BOOT_JARS += \
+    QPerformance \
+    UxPerformance
+endif
+
 # Ramdisk
 PRODUCT_PACKAGES += \
     init.batteryd.rc \
