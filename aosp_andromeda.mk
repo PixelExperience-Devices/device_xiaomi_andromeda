@@ -23,6 +23,9 @@ $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 PRODUCT_PACKAGES += \
     PixelLiveWallpaperPrebuilt
 
+# QTI Framework boost
+TARGET_SUPPORTS_FRAMEWORK_BOOST := true
+
 # Inherit from andromeda device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
