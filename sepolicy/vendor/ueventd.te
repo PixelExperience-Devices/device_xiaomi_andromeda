@@ -1,0 +1,4 @@
+allow ueventd metadata_file:dir search;
+
+#============= ueventd ==============
+allow ueventd vendor_sysfs_displaycount:file getattr;

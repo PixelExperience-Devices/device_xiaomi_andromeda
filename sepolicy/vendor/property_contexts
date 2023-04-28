@@ -1,0 +1,57 @@
+# Audio
+persist.audio.dirac.                         u:object_r:vendor_audio_prop:s0
+
+# Camera
+persist.camera.                              u:object_r:vendor_camera_prop:s0
+ro.vendor.camera.                            u:object_r:vendor_camera_prop:s0
+ro.camera.                                   u:object_r:vendor_camera_prop:s0
+vendor.camera.boot_complete                  u:object_r:vendor_camera_prop:s0
+vendor.camera.sensor.                        u:object_r:vendor_camera_sensor_prop:s0
+
+# Display
+ro.gfx.driver.1                              u:object_r:graphics_config_prop:s0
+sys.panel.                                   u:object_r:sys_panel_prop:s0
+
+# Fingerprint
+fpc_kpi                                      u:object_r:vendor_fp_prop:s0
+persist.vendor.sys.fp.                       u:object_r:vendor_fp_prop:s0
+ro.boot.fpsensor                             u:object_r:vendor_fp_prop:s0
+ro.hardware.fp                               u:object_r:vendor_fp_prop:s0
+vendor.fps_hal.                              u:object_r:vendor_fp_prop:s0
+
+# Init
+crypto.driver.load                           u:object_r:vendor_init_prop:s0
+drmdiag.load                                 u:object_r:vendor_init_prop:s0
+init.svc.wpa_supplicant                      u:object_r:vendor_init_prop:s0
+persist.env.fastdorm.enabled                 u:object_r:vendor_init_prop:s0
+persist.ims.regmanager.mode                  u:object_r:vendor_init_prop:s0
+persist.usb.hvdcp.detect                     u:object_r:vendor_init_prop:s0
+ro.bluetooth.ftm_enabled                     u:object_r:vendor_init_prop:s0
+ro.data.large_tcp_window_size                u:object_r:vendor_init_prop:s0
+ro.logdumpd.enabled                          u:object_r:vendor_init_prop:s0
+init.svc.ril-daemon                          u:object_r:vendor_qti_init_shell_prop:s0
+persist.serial.enable                        u:object_r:vendor_qti_init_shell_prop:s0
+persist.sys.ext4.dataesb                     u:object_r:vendor_qti_init_shell_prop:s0
+
+# Misc
+persist.slider.                              u:object_r:persist_slider_prop:s0
+ro.hwversion                                 u:object_r:ro_hwversion_prop:s0
+vendor.sys.rpmb_state                        u:object_r:vendor_tee_listener_prop:s0
+
+# MIUI
+ro.build.flavor                              u:object_r:exported_default_prop:s0
+ro.carrier.name                              u:object_r:exported_default_prop:s0
+ro.cust.test                                 u:object_r:exported_default_prop:s0
+ro.miui.                                     u:object_r:exported_system_prop:s0
+ro.product.marketname                        u:object_r:build_prop:s0
+ro.product.mod_device                        u:object_r:build_prop:s0
+
+# Payment
+persist.vendor.sys.pay.                      u:object_r:vendor_payment_security_prop:s0
+persist.vendor.sys.provision.status          u:object_r:vendor_payment_security_prop:s0
+
+# Sensors
+persist.sensor.sardisable                    u:object_r:vendor_sensors_prop:s0
+
+# Thermal
+vendor.sys.thermal.                          u:object_r:vendor_thermal_normal_prop:s0
