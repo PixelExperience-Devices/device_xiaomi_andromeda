@@ -1,0 +1,13 @@
+type wifi_mac_generator, domain;
+type wifi_mac_generator_exec, exec_type, vendor_file_type, file_type;
+
+init_daemon_domain(wifi_mac_generator)
+
+#============= wifi_mac_generator ==============
+allow wifi_mac_generator mnt_vendor_file:dir search;
+allow wifi_mac_generator mnt_vendor_file:file getattr;
+allow wifi_mac_generator self:capability sys_module;
+allow wifi_mac_generator vendor_file:system module_load;
+allow wifi_mac_generator vendor_toolbox_exec:file execute_no_trans;
+allow wifi_mac_generator vendor_wifi_vendor_data_file:dir search;
+allow wifi_mac_generator vendor_wifi_vendor_data_file:file { getattr read };

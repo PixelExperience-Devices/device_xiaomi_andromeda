@@ -1,0 +1,2 @@
+/vendor/bin/hw/android\.hardware\.dumpstate@1\.0-service\.xiaomi    u:object_r:hal_dumpstate_default_exec:s0
+/vendor/bin/tcpdump                                                 u:object_r:vendor_tcpdump_exec:s0

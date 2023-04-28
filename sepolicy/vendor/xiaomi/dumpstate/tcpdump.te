@@ -1,0 +1,12 @@
+type vendor_tcpdump, domain;
+
+type vendor_tcpdump_exec, exec_type, vendor_file_type, file_type;
+init_daemon_domain(vendor_tcpdump)
+
+allowxperm vendor_tcpdump self:packet_socket ioctl 0x8933;
+
+#============= vendor_tcpdump ==============
+allow vendor_tcpdump self:capability { net_raw setgid setuid };
+allow vendor_tcpdump self:packet_socket { create getopt ioctl map read setopt write };
+allow vendor_tcpdump vendor_wifi_vendor_log_data_file:dir { add_name search write };
+allow vendor_tcpdump vendor_wifi_vendor_log_data_file:file { create getattr open write };

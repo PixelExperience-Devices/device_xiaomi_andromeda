@@ -1,0 +1,2 @@
+type vendor_sysfs_displaycount, fs_type, proc_type;
+type vendor_displaycount_data_file, data_file_type, file_type;

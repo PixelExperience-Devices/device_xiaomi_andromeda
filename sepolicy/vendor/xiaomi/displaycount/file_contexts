@@ -1,0 +1,5 @@
+# Binary
+/vendor/bin/displaycount           u:object_r:vendor_displaycount_exec:s0
+
+# Data files
+/data/vendor/misc/display(/.*)?    u:object_r:vendor_displaycount_data_file:s0

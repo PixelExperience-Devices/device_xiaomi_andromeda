@@ -1,0 +1,2 @@
+#============= vendor_sensors ==============
+allow vendor_sensors proc:file { getattr open read };

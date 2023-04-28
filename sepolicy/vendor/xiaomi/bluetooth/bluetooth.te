@@ -1,0 +1,2 @@
+#============= bluetooth ==============
+allow bluetooth incremental_prop:file { getattr map open read };

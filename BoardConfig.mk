@@ -190,7 +190,7 @@ VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
 
 # Sepolicy
 include device/qcom/sepolicy_vndr-legacy-um/SEPolicy.mk
-include device/xiaomi/andromeda-sepolicy/sepolicy.mk
+include $(DEVICE_PATH)/sepolicy/sepolicy.mk
 
 # System properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop

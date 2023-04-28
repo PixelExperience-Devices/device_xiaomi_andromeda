@@ -1,0 +1,10 @@
+allow vendor_qti_init_shell sysfs_wakeup:file setattr;
+
+typeattribute vendor_qti_init_shell vendor_executes_system_violators;
+
+#============= vendor_qti_init_shell ==============
+allow vendor_qti_init_shell ctl_start_prop:property_service set;
+allow vendor_qti_init_shell sys_panel_prop:property_service set;
+allow vendor_qti_init_shell toolbox_exec:file { execute execute_no_trans getattr map open read };
+allow vendor_qti_init_shell vendor_fp_prop:property_service set;
+allow vendor_qti_init_shell vendor_qti_init_shell_prop:file { getattr map open read };

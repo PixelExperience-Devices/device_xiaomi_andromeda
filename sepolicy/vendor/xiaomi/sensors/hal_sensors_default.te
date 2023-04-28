@@ -1,0 +1,4 @@
+#============= hal_sensors_default ==============
+allow hal_sensors_default audio_socket:sock_file write;
+allow hal_sensors_default hal_audio_default:unix_stream_socket connectto;
+allow hal_sensors_default sensors_device:chr_file { ioctl open read };
