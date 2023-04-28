@@ -1,0 +1,3 @@
+user=_app seinfo=platform name=com.qualcomm.qti.services.secureui* domain=secure_ui_service_app levelFrom=all
+
+user=system seinfo=platform name=org.lineageos.settings domain=xiaomiparts type=system_app_data_file

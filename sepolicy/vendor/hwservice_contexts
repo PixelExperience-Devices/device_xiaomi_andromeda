@@ -1,0 +1,25 @@
+# Fingerprint
+com.fingerprints.extension::IFingerprintAuthenticator                    u:object_r:hal_xiaomi_fingerprint_hwservice:s0
+com.fingerprints.extension::IFingerprintCalibration                      u:object_r:hal_xiaomi_fingerprint_hwservice:s0
+com.fingerprints.extension::IFingerprintEngineering                      u:object_r:hal_xiaomi_fingerprint_hwservice:s0
+com.fingerprints.extension::IFingerprintNavigation                       u:object_r:hal_xiaomi_fingerprint_hwservice:s0
+com.fingerprints.extension::IFingerprintRecalibration                    u:object_r:hal_xiaomi_fingerprint_hwservice:s0
+com.fingerprints.extension::IFingerprintSenseTouch                       u:object_r:hal_xiaomi_fingerprint_hwservice:s0
+com.fingerprints.extension::IFingerprintSensorTest                       u:object_r:hal_xiaomi_fingerprint_hwservice:s0
+vendor.xiaomi.hardware.fingerprintextension::IXiaomiFingerprint          u:object_r:hal_xiaomi_fingerprint_hwservice:s0
+
+# NFC
+vendor.nxp.nxpnfc::INxpNfc                                               u:object_r:hal_nfc_hwservice:s0
+vendor.nxp.nxpese::INxpEse                                               u:object_r:nxpese_hwservice:s0
+
+# QTI
+vendor.qti.sla.service::ISlaService                                      u:object_r:slaservice_hwservice:s0
+
+# Xiaomi
+vendor.xiaomi.hardware.citsensorservice::ICitSensorService               u:object_r:citsensorservice_hwservice:s0
+vendor.xiaomi.hardware.mfidoca::IFidoService                             u:object_r:fidoservice_hwservice:s0
+vendor.xiaomi.hardware.misys::IMiSys                                     u:object_r:misys_hwservice:s0
+vendor.xiaomi.hardware.mlipay::IMlipayService                            u:object_r:hal_mlipay_hwservice:s0
+vendor.xiaomi.hardware.mtdservice::IMTService                            u:object_r:mtdservice_hwservice:s0
+vendor.xiaomi.hardware.tidaservice::ITidaService                         u:object_r:tidaservice_hwservice:s0
+vendor.xiaomi.hardware.vsimapp::IVSIMService                             u:object_r:vsimservice_hwservice:s0

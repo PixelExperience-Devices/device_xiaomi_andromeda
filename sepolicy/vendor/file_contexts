@@ -1,0 +1,57 @@
+# Camera
+/mnt/vendor/persist/camera(/.*)?                                            u:object_r:camera_persist_file:s0
+
+# Elliptic proximity sensor
+/dev/elliptic0                                                              u:object_r:sensors_device:s0
+/dev/socket/audio_hw_socket                                                 u:object_r:audio_socket:s0
+
+# Fingerprint data
+/data/vendor/fpc(/.*)?                                                      u:object_r:vendor_fingerprint_data_file:s0
+/data/vendor/fpdump(/.*)?                                                   u:object_r:vendor_fingerprint_data_file:s0
+/mnt/vendor/persist/fpc(/.*)?                                               u:object_r:vendor_fingerprint_data_file:s0
+
+# HALs
+/vendor/bin/hw/android\.hardware\.dumpstate@1\.0-service\.xiaomi            u:object_r:hal_dumpstate_default_exec:s0
+/vendor/bin/hw/android\.hardware\.light@2.0-service\.xiaomi_sm8150          u:object_r:hal_light_default_exec:s0
+/vendor/bin/hw/android\.hardware\.nfc_snxxx@1\.2-service                    u:object_r:hal_nfc_default_exec:s0
+/vendor/bin/hw/vendor\.qti\.sla\.service@1\.0-service                       u:object_r:hal_slaservice_default_exec:s0
+/vendor/bin/hw/vendor.xiaomi.hardware.citsensorservice@1.1-service          u:object_r:hal_citsensorservice_xiaomi_default_exec:s0
+/vendor/bin/hw/vendor\.xiaomi\.hardware\.misys@1\.0-service                 u:object_r:hal_misys_default_exec:s0
+/vendor/bin/hw/vendor\.xiaomi\.hardware\.misys@2\.0-service                 u:object_r:hal_misys_default_exec:s0
+/vendor/bin/hw/vendor\.xiaomi\.hardware\.misys@3\.0-service                 u:object_r:hal_misys_default_exec:s0
+/vendor/bin/fidoca                                                          u:object_r:hal_mfidoca_default_exec:s0
+/vendor/bin/mlipayd@1.1                                                     u:object_r:hal_mlipay_default_exec:s0
+/vendor/bin/mtd@1.2                                                         u:object_r:hal_mtdservice_default_exec:s0
+/vendor/bin/tidad@1.2                                                       u:object_r:hal_tidaservice_default_exec:s0
+/vendor/bin/vsimd                                                           u:object_r:hal_vsimapp_default_exec:s0
+
+# Misc
+/vendor/bin/batterysecret                                                   u:object_r:batterysecret_exec:s0
+/vendor/bin/charge_logger                                                   u:object_r:charge_logger_exec:s0
+/vendor/bin/displaycount                                                    u:object_r:vendor_displaycount_exec:s0
+/vendor/bin/remosaic_daemon                                                 u:object_r:remosaic_daemon_exec:s0
+/vendor/bin/tcpdump                                                         u:object_r:vendor_tcpdump_exec:s0
+
+# Misc data
+/data/vendor/misc/display(/.*)?                                             u:object_r:vendor_displaycount_data_file:s0
+
+# Persist subsystem
+/mnt/vendor/persist/subsys(/.*)?                                            u:object_r:persist_subsys_file:s0
+
+# Thermal daemon
+/vendor/bin/mi_thermald                                                     u:object_r:mi_thermald_exec:s0
+
+# Thermal data
+/data/vendor/thermal(/.*)?                                                  u:object_r:vendor_thermal_data_file:s0
+
+# USB
+/vendor/bin/init\.mi\.usb\.sh                                               u:object_r:vendor_qti_init_shell_exec:s0
+
+# WIFI
+/vendor/bin/nv_mac                                                          u:object_r:vendor_wcnss_service_exec:s0
+/vendor/bin/wifi-mac-generator                                              u:object_r:wifi_mac_generator_exec:s0
+
+# WIFI data
+/data/hostapd(/.*)?                                                         u:object_r:hostapd_data_file:s0
+/data/vendor/mac_addr(/.*)?                                                 u:object_r:vendor_wifi_vendor_data_file:s0
+/data/vendor/wlan_logs(/.*)?                                                u:object_r:vendor_wifi_vendor_log_data_file:s0

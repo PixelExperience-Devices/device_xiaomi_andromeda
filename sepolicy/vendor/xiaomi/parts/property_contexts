@@ -1,2 +1,0 @@
-persist.audio.dirac.    u:object_r:vendor_audio_prop:s0
-persist.slider.         u:object_r:persist_slider_prop:s0
