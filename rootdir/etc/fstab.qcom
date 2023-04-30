@@ -8,6 +8,7 @@
 #<src>                                      <mnt_point>             <type>  <mnt_flags and options>                                                                           <fs_mgr_flags>
 /dev/block/by-name/metadata                  /metadata               ext4    noatime,nosuid,nodev,discard                                                                      wait,formattable,wrappedkey
 /dev/block/bootdevice/by-name/system         /                       ext4    ro,barrier=1,discard                                                                              wait,avb
+/dev/block/bootdevice/by-name/cust           /system_ext             ext4    ro,barrier=1,discard                                                                              wait,avb
 /dev/block/bootdevice/by-name/boot           /boot                   emmc    defaults                                                                                          recoveryonly
 /dev/block/bootdevice/by-name/cache          /cache                  ext4    nosuid,noatime,nodev,barrier=0                                                                    wait
 /dev/block/bootdevice/by-name/cache          /cache                  f2fs    nosuid,nodev,noatime,inline_xattr                                                                 wait,check,formattable
