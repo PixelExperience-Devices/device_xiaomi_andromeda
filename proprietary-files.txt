@@ -773,15 +773,6 @@ vendor/firmware/a530_gpmu.fw2
 vendor/firmware/a530_pfp.fw
 vendor/firmware/a530_pm4.fw
 vendor/firmware/a540_gpmu.fw2
-vendor/firmware/a612_rgmu.bin
-vendor/firmware/a630_gmu.bin
-vendor/firmware/a630_sqe.fw
-vendor/firmware/a640_gmu.bin
-vendor/firmware/a640_zap.b00
-vendor/firmware/a640_zap.b01
-vendor/firmware/a640_zap.b02
-vendor/firmware/a640_zap.elf
-vendor/firmware/a640_zap.mdt
 vendor/firmware/andromeda_ois.coeff
 vendor/firmware/andromeda_ois.prog
 vendor/firmware/ipa_uc.b00
@@ -794,6 +785,18 @@ vendor/firmware/leia_pm4_470.fw
 vendor/firmware/stm_fts_production_limits.csv
 vendor/firmware/tas2557_uCDSP.bin
 vendor/firmware/wlan/qca_cld/WCNSS_qcom_cfg.ini
+
+# Firmware (Adreno) - from nabu V14.0.5.0.TKXCNXM
+vendor/firmware/a612_rgmu.bin|cb8705d5bc417e53863ed16ab0bed2fc1489646f
+vendor/firmware/a618_gmu.bin|0c211ef8a3246d649a4ae52a926d128b61e3c264
+vendor/firmware/a630_gmu.bin|32bb4acc7767c47ddb487ed7cb998d465ee462f2
+vendor/firmware/a630_sqe.fw|6526cbb24d614dd67dc18e3c80d5c4374a0b3f63
+vendor/firmware/a640_gmu.bin|fb1eab0dd5f313abf31441e2209c9398da7df98b
+vendor/firmware/a640_zap.b00|7afc31984d7eeacdd0fc78118ad8fa46c9b3e4ee
+vendor/firmware/a640_zap.b01|b3ccbf9dacf89af7c19ec6a7c36fe958e3815228
+vendor/firmware/a640_zap.b02|27d26ca0ae982c065fb7ab58be73bf3ca2e8bdf3
+vendor/firmware/a640_zap.elf|f83b5944e66aa11b1b35cb63cc99ba64792adfdb
+vendor/firmware/a640_zap.mdt|3f8b6647705ccb07efc0a27fff235d8d4775f3a1
 
 # GPS - from LA.QSSI.11.0.r1-11600-qssi.0
 system_ext/etc/permissions/com.qti.location.sdk.xml|fac5922b978d83a00cd9ec0ddcf2c5d7ab26d492
