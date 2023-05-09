@@ -400,10 +400,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/rootdir/bin/hack_attest.sh:$(TARGET_COPY_OUT_SYSTEM)/bin/hack_attest.sh
 
-# Recovery
-PRODUCT_PACKAGES += \
-    librecovery_updater_xiaomi
-
 # RenderScript
 PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl
