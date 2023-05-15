@@ -7,3 +7,4 @@ allow init debugfs_tracing_debug:dir mounton;
 
 #============= init ==============
 allow init same_process_hal_file:file execute;
+allow init vendor_sysfs_mmc_host:file w_file_perms;

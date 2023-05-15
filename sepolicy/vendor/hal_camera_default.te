@@ -1,3 +1,5 @@
+typeattribute hal_camera_default mlstrustedsubject;
+
 # Allow hal_camera_default to read and write to camera_persist_file
 allow hal_camera_default camera_persist_file:dir rw_dir_perms;
 allow hal_camera_default camera_persist_file:{
