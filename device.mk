@@ -301,6 +301,7 @@ PRODUCT_PACKAGES += \
     com.nxp.nfc.nq \
     libnqnfc_nci_jni \
     nfc_nci.nqx.default.hw \
+    nqnfcinfo \
     NQNfcNci \
     nqnfcee_access.xml \
     nqnfcse_access.xml \
