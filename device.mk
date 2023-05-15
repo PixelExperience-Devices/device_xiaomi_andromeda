@@ -300,6 +300,7 @@ PRODUCT_PACKAGES += \
     com.android.nfc_extras \
     com.nxp.nfc.nq \
     nfc_nci.nqx.default.hw \
+    nqnfcinfo \
     NQNfcNci \
     SecureElement \
     Tag \
