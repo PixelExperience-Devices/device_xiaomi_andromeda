@@ -45,6 +45,7 @@ BOARD_KERNEL_SEPARATED_DTBO := true
 TARGET_KERNEL_CLANG_VERSION := r510928
 TARGET_KERNEL_CONFIG := andromeda_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/andromeda
+KERNEL_CC := CC=$(shell pwd)/prebuilts/clang/host/linux-x86/clang-$(TARGET_KERNEL_CLANG_VERSION)/bin/clang
 
 # Platform
 TARGET_BOARD_PLATFORM := msmnile
