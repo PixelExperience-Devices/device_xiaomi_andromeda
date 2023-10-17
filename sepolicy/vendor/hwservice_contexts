@@ -8,10 +8,6 @@ com.fingerprints.extension::IFingerprintSenseTouch                       u:objec
 com.fingerprints.extension::IFingerprintSensorTest                       u:object_r:hal_xiaomi_fingerprint_hwservice:s0
 vendor.xiaomi.hardware.fingerprintextension::IXiaomiFingerprint          u:object_r:hal_xiaomi_fingerprint_hwservice:s0
 
-# NFC
-vendor.nxp.nxpnfc::INxpNfc                                               u:object_r:hal_nfc_hwservice:s0
-vendor.nxp.nxpese::INxpEse                                               u:object_r:nxpese_hwservice:s0
-
 # QTI
 vendor.qti.sla.service::ISlaService                                      u:object_r:slaservice_hwservice:s0
 

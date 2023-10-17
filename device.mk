@@ -294,22 +294,15 @@ PRODUCT_PACKAGES += \
 
 # NFC
 PRODUCT_SOONG_NAMESPACES += \
-    vendor/nxp/opensource/sn100x
+    hardware/nxp/nfc
 
 PRODUCT_PACKAGES += \
+    android.hardware.nfc-service.nxp \
     com.android.nfc_extras \
-    com.nxp.nfc.nq \
-    nfc_nci.nqx.default.hw \
-    nqnfcinfo \
-    NQNfcNci \
+    libchrome.vendor \
+    NfcNci \
     SecureElement \
     Tag \
-    vendor.nxp.hardware.nfc@2.0-service
-
-PRODUCT_PACKAGES += \
-    jcos_nq_client \
-    ls_nq_client \
-    se_nq_extn_client
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/nfc/libnfc-nci.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/libnfc-nci.conf \
