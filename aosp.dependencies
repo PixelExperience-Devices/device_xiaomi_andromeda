@@ -1,0 +1,19 @@
+[
+  {
+    "repository":  "kernel_xiaomi_andromeda",
+    "target_path": "kernel/xiaomi/andromeda",
+    "branch":      "fourteen"
+  },
+  {
+    "remote": "pixel-devices-blobs",
+    "repository":  "vendor_xiaomi_andromeda",
+    "target_path": "vendor/xiaomi/andromeda",
+    "branch":      "fourteen"
+  },
+  {
+    "remote": "gitlab",
+    "repository":  "inkypen/prebuilts_clang_host_linux-x86",
+    "target_path": "prebuilts/clang/host/linux-x86/clang-r510928",
+    "branch":      "clang-r510928"
+  }
+]

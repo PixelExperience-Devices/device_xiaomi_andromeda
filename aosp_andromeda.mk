@@ -10,13 +10,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
-# Inherit some common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Pixel Experience stuff
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
+TARGET_INCLUDE_STOCK_ARCORE := true
+TARGET_SUPPORTS_CALL_RECORDING := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_SUPPORTS_QUICK_TAP := true
 
-# Gapps
-ifeq ($(WITH_GMS), true)
-$(call inherit-product,vendor/gapps/arm64/arm64-vendor.mk)
-endif
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # QTI Framework boost
 # TARGET_SUPPORTS_FRAMEWORK_BOOST := true
@@ -28,7 +30,7 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 $(call inherit-product-if-exists, vendor/xiaomi/andromeda-firmware/firmware.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_andromeda
+PRODUCT_NAME := aosp_andromeda
 PRODUCT_DEVICE := andromeda
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi MIX 3 5G
