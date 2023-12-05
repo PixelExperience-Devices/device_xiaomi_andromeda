@@ -156,6 +156,25 @@ vendor/lib/liba2dpoffload.so
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_dun@1.0-impl.so
 vendor/lib64/liba2dpoffload.so
 
+# Camera - from raphael-user-11-RKQ1.200826.002-21.1.26-release-keys
+system_ext/framework/camerax-vendor-extensions.jar|1362060bfc28b0152c3987912d8adaedb8d2415f
+vendor/bin/hw/android.hardware.camera.provider@2.4-service_64|d75fbf981881b05a9c35dec0937dd949d69a2eae
+vendor/etc/init/android.hardware.camera.provider@2.4-service_64.rc|b86a7c163879a53fe403fde169342632536c2735
+vendor/lib64/android.hardware.camera.provider@2.4-external.so|72adbe24694e85af2a0b93fdc099c166dc476e20
+vendor/lib64/android.hardware.camera.provider@2.4-legacy.so|3627dd07a9a762c165171a5b9aa67f331d89adf1
+vendor/lib64/camera.device@1.0-impl.so|bd1b7ccc5699ad75db1eb336016d0cac22a55968
+vendor/lib64/camera.device@3.2-impl.so|3e33449c09a28ef467bb713e83705959be7f6283
+vendor/lib64/camera.device@3.3-impl.so|a9e4f7f78272f7581eef053d5fe38e2e38ca322f
+vendor/lib64/camera.device@3.4-external-impl.so|69383a3153cc4b2b5ec23fcd5c0b7c76ad77832b
+vendor/lib64/camera.device@3.4-impl.so|a81eb617f764606302a76e3cee7cf62a1d276aea
+vendor/lib64/camera.device@3.5-external-impl.so|448f4271d6866cac3254bd07299641100a0bcec3
+vendor/lib64/camera.device@3.5-impl.so|295a48e71e3524c56b3de3b9f12eeca8cc78020b
+vendor/lib64/camera.device@3.6-external-impl.so|d4299119a81ce75ef09e843fd854501c571a4733
+vendor/lib64/hw/android.hardware.camera.provider@2.4-impl.so|ef02d77e6a2c14fefbdf4093092a07061dc9ce9b
+vendor/lib64/vendor.qti.hardware.camera.device@1.0.so|543310393fa5170c481cd94f55ac65c6558d9202
+vendor/lib64/vendor.qti.hardware.camera.device@2.0.so|c22277198a5fdd7e4b7b057ef5068f7edbd3f817
+vendor/lib64/vendor.qti.hardware.camera.device@3.5.so|a054618c3750e90f8ac4a2d5d4069113ffcf7b53
+
 # Camera
 lib/libchromaflash.so
 lib64/libseemore.so
