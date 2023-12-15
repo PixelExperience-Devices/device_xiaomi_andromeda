@@ -19,7 +19,7 @@ $(call inherit-product,vendor/gapps/arm64/arm64-vendor.mk)
 endif
 
 # QTI Framework boost
-TARGET_SUPPORTS_FRAMEWORK_BOOST := false
+# TARGET_SUPPORTS_FRAMEWORK_BOOST := true
 
 # Inherit from andromeda device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
