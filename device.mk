@@ -532,5 +532,12 @@ PRODUCT_PACKAGES += \
     libavservices_minijail \
     libavservices_minijail.vendor \
     libdisplayconfig.qti \
+    libdisplayconfig.system.qti \
     libqdMetaData \
-    libqdMetaData.system
+    libqdMetaData.system \
+    libwfdaac_vendor \
+    vendor.display.config@2.0 \
+    vendor.qti.hardware.display.config-V5-ndk
+
+PRODUCT_BOOT_JARS += \
+    WfdCommon

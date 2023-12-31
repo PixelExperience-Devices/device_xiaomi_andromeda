@@ -65,10 +65,12 @@
         <version>1.0-3</version>
         <interface>
             <name>ICryptoFactory</name>
+            <instance>wfdhdcp</instance>
             <instance>widevine</instance>
         </interface>
         <interface>
             <name>IDrmFactory</name>
+            <instance>wfdhdcp</instance>
             <instance>widevine</instance>
         </interface>
     </hal>
@@ -699,6 +701,27 @@
         <interface>
             <name>IHidlVppService</name>
             <instance>vppService</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.qti.hardware.wifidisplaysession</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IWifiDisplaySession</name>
+            <instance>wifidisplaysession</instance>
+        </interface>
+        <interface>
+            <name>IWifiDisplaySessionAudioTrack</name>
+            <instance>wifidisplaysessionaudiotrack</instance>
+        </interface>
+        <interface>
+            <name>IWifiDisplaySessionImageTrack</name>
+            <instance>wifidisplaysessionimagetrack</instance>
+        </interface>
+        <interface>
+            <name>IWifiDisplaySessionVideoTrack</name>
+            <instance>wifidisplaysessionvideotrack</instance>
         </interface>
     </hal>
     <hal format="hidl" optional="true">
