@@ -19,6 +19,7 @@ debug.stagefright.omx_default_rank.sw-audio=1
 debug.stagefright.omx_default_rank=0
 drm.service.enabled=true
 keyguard.no_require_sim=true
+media.wfd.max_resolution=7
 persist.audio.fluence.speaker=true
 persist.audio.fluence.voicecall=true
 persist.audio.fluence.voicerec=false
